@@ -1,0 +1,43 @@
+.list-view{
+    position: relative;
+    width: 100%
+}
+.stories-nav{
+    position: fixed;
+    z-index: 1;
+    top: 171px;
+    // margin-top: 171px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #0580ff;
+}
+.stories-nav-ul {
+    display: flex;
+    width: 25%;
+    flex-direction: row;
+    justify-content: center;
+}
+.stories-nav-li {
+    list-style-type: none;
+    text-align: center;
+    color: white;
+    margin: 0px 20px 0px 20px;
+
+}
+
+.story-grid{
+    position: relative;
+    margin-top: 221px;
+    width: 100%;
+    display: flex;
+    padding-top: 42px;
+    padding-right:12px;
+    padding-left:12px;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}

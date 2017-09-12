@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:600|Playfair+Display');
+@import 'variables';
+
+h1 {
+  font: {
+    family: 'Muli';
+    size: 40px;
+  }
+}
+
+
+p, a, div, button, li {
+  font: {
+    family: 'Muli', sans-serif;
+    weight: 600;
+    size: 23px;
+  }
+}
+
+body {
+  background: $light;
+}
