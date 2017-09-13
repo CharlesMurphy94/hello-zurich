@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 ;
 class ListItem extends Component{
     constructor(props){
@@ -49,6 +50,7 @@ class ListItem extends Component{
     }
     render(){
         return(
+            <Link to={`/story/${this.storyNameParser(this.state.storyName)}`}>
             <div className='list-item'>
                 {/* <img className="preview-pic" src={`../../../img/previewPics/${this.storyNameParser(this.state.storyName)}.jpg`}>
                 </img> */}
@@ -62,6 +64,7 @@ class ListItem extends Component{
                     <i className={this.state.favorited?'fa fa-heart':'fa fa-heart-o'} onClick={this.toggleFavorite}></i>
                 </div>
             </div>
+            </Link>
                 
 
         )

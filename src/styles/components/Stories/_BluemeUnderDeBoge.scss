@@ -1,0 +1,142 @@
+.blueme-under-de-boge{
+    .story-nav{
+        width: 100%;
+        height: 210px;
+    }
+    .story-slider{
+        
+        width: 100%;
+        height: 400px;
+        .slider-image{
+            width: 92.5%;
+            margin-top: 80px;
+            margin-left: 3.75%;
+            height: auto;
+            // background-image:url('./../img/previewPics/alpli-bar.jpg');
+            .bluemeunderdeboge0{
+                width: 100%;
+                height:800px;
+                background-size: cover;
+                background-image: url('./../img/BluemeUnderDeBoge/bluemeunderdeboge-1.jpg');
+            }
+            .bluemeunderdeboge1{
+                width: 100%;
+                height:800px;
+                background-size: cover;
+                background-image: url('./../img/BluemeUnderDeBoge/bluemeunderdeboge-2.jpg');
+            }
+            .bluemeunderdeboge2{
+                width: 100%;
+                height:800px;
+                background-size: cover;
+                background-image: url('./../img/BluemeUnderDeBoge/bluemeunderdeboge-3.jpg');
+            }
+            .bluemeunderdeboge3{
+                width: 100%;
+                height:800px;
+                background-size: cover;
+                background-image: url('./../img/BluemeUnderDeBoge/bluemeunderdeboge-4.jpg');
+            }
+            .bluemeunderdeboge4{
+                width: 100%;
+                height:800px;
+                background-size: cover;
+                background-image: url('./../img/BluemeUnderDeBoge/bluemeunderdeboge-5.jpg');
+            }
+            .bluemeunderdeboge5{
+                width: 100%;
+                height:800px;
+                background-size: cover;
+                background-image: url('./../img/BluemeUnderDeBoge/bluemeunderdeboge-6.jpg');
+            }
+            .bluemeunderdeboge6{
+                width: 100%;
+                height:800px;
+                background-size: cover;
+                background-image: url('./../img/BluemeUnderDeBoge/bluemeunderdeboge-7.jpg');
+            }
+            .bluemeunderdeboge7{
+                width: 100%;
+                height:800px;
+                background-size: cover;
+                background-image: url('./../img/BluemeUnderDeBoge/bluemeunderdeboge-8.jpg');
+            }
+        }
+
+        .left-arrow{
+            position: absolute;
+            left: 2%;
+            top: 682px;
+
+            width: 80px;
+            height: 15px;
+            background-size: cover;
+            background-image: url('../img/slider-arrow.svg');
+            z-index: 8;
+            -webkit-transform:rotate(-10deg);
+            -moz-transform:rotate(180deg);
+             -ms-transform:rotate(180deg);
+              -o-transform:rotate(180deg);
+                 transform:rotate(180deg); 
+            // position: absolute;
+        }
+        .right-arrow{
+            position: absolute;
+            right: 2%;
+            top: 682px;
+
+            width: 80px;
+            height: 15px;
+            background-size: cover;
+            background-image: url('../img/slider-arrow.svg');
+            // position: absolute;
+        }
+        .slider-dot-container{
+            width: 100%;
+            height: 20px;
+            padding-right: 3.75%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+
+            .slider-dots{
+                width: 220px;
+                padding-left: 10px;
+                padding-right: 0px;
+                height: 30px;
+                position: relative;
+                right: 0px;
+                top:0px;
+                display: flex;
+                flex-direction: row;
+                // background-color: yellow;
+                align-items: flex-end;
+                justify-content: space-between;
+               
+                .black-dot{
+                    background-color: black;
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 50%;
+                    &:first-child{
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                    }
+                }
+                .blue-dot{
+                    background-color: $blue;
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 50%;
+                    &:first-child{
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                    }
+                }
+                
+            }
+        }
+    }
+}

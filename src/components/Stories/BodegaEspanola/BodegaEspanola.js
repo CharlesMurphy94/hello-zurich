@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import {Link} from 'react-router-dom'
-export default class Weinschenke extends Component {
+export default class BodegaEspanola extends Component {
     constructor(){
         super()
         this.state={
-            storyName:'weinschenke',
+            storyName:'bodegaespanola',
             activePic:0,
         }
     
@@ -26,11 +26,11 @@ export default class Weinschenke extends Component {
             this.setState({activePic: this.state.activePic - 1})
         } else{
             console.log('to last')
-            this.setState({activePic: 4})
+            this.setState({activePic: 8})
         }
     }
     handleRight = (change) => {
-        if (this.state.activePic < 4) {
+        if (this.state.activePic < 8) {
             this.setState({activePic: this.state.activePic + 1})
             console.log(this.state.activePic)
         } else{
@@ -50,7 +50,7 @@ export default class Weinschenke extends Component {
         //     backgroundImage:url(`./img/previewPics/${this.storyNameParser(this.state.featuredStories[this.state.activeFeature].name)}.jpg`)
         // }
         return (
-            <div className='weinschenke'>
+            <div className='bodega-espanola'>
                 <div className='story-nav'>
                 </div>
                 <div className='story-slider'>
@@ -73,6 +73,8 @@ export default class Weinschenke extends Component {
                             <div className={this.state.activePic===5?'black-dot':'blue-dot'} value={5} onClick={()=>this.handleSelect(5)}/>
                             <div className={this.state.activePic===6?'black-dot':'blue-dot'} value={6} onClick={()=>this.handleSelect(6)}/>
                             <div className={this.state.activePic===7?'black-dot':'blue-dot'} value={7} onClick={()=>this.handleSelect(7)}/>
+                            <div className={this.state.activePic===8?'black-dot':'blue-dot'} value={8} onClick={()=>this.handleSelect(8)}/>
+
                             
                         </div>
                     </div>

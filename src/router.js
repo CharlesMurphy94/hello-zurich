@@ -23,17 +23,17 @@ export default(
         <Route path='/list-view' component={ List }></Route>
         <Route path='/map-view' component={ Map }></Route>
         <Route path='/favorites' component={ Favorites }></Route>
-        <Route path='/story/schwarzenbachkolonialwaren' component={ SchwarzenbachKolonialwaren }></Route>
-        <Route path='/story/bluemeunderdeboge' component={ BluemeUnderDeBoge }></Route>
+        <Route path='/story/schwarzenbach-kolonialwaren' component={ SchwarzenbachKolonialwaren }></Route>
+        <Route path='/story/blueme-under-de-boge' component={ BluemeUnderDeBoge }></Route>
         <Route path='/story/weinschenke' component={ Weinschenke }></Route>
-        <Route path='/story/puntoitaliano' component={ PuntoItaliano }></Route>
-        <Route path='/story/lesvideos' component={ LesVideos }></Route>
-        <Route path='/story/backereivohdin' component={ BackereiVohdin }></Route>
+        <Route path='/story/punto-italiano' component={ PuntoItaliano }></Route>
+        <Route path='/story/les-videos' component={ LesVideos }></Route>
+        <Route path='/story/backerei-vohdin' component={ BackereiVohdin }></Route>
         <Route path='/story/nordbrucke' component={ Nordbrucke }></Route>
-        <Route path='/story/villaTobler' component={ VillaTobler }></Route>
+        <Route path='/story/villa-Tobler' component={ VillaTobler }></Route>
         <Route path='/story/condomeria' component={ Condomeria }></Route>
-        <Route path='/story/bodegaespanola' component={ BodegaEspanola }></Route>
-        <Route path='/story/alplibar' component={ AlpliBar }></Route>
+        <Route path='/story/bodega-espanola' component={ BodegaEspanola }></Route>
+        <Route path='/story/alpli-bar' component={ AlpliBar }></Route>
     </Switch>
 
 

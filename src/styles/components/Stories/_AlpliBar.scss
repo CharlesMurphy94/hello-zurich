@@ -1,0 +1,149 @@
+.alpli-bar{
+    .story-nav{
+        width: 100%;
+        height: 210px;
+    }
+    .story-slider{
+        
+        width: 100%;
+        height: 400px;
+        .slider-image{
+            width: 92.5%;
+            margin-top: 80px;
+            margin-left: 3.75%;
+            height: auto;
+            // background-image:url('./../img/previewPics/alpli-bar.jpg');
+            .alplibar0{
+                width: 100%;
+                height:800px;
+                background-size: cover;
+                background-image: url('./../img/AlpliBar/alplibar-1.jpg');
+            }
+            .alplibar1{
+                width: 100%;
+                height:800px;
+                background-size: cover;
+                background-image: url('./../img/AlpliBar/alplibar-2.jpg');
+            }
+            .alplibar2{
+                width: 100%;
+                height:800px;
+                background-size: cover;
+                background-image: url('./../img/AlpliBar/alplibar-3.jpg');
+            }
+            .alplibar3{
+                width: 100%;
+                height:800px;
+                background-size: cover;
+                background-image: url('./../img/AlpliBar/alplibar-4.jpg');
+            }
+            .alplibar4{
+                width: 100%;
+                height:800px;
+                background-size: cover;
+                background-image: url('./../img/AlpliBar/alplibar-5.jpg');
+            }
+            .alplibar5{
+                width: 100%;
+                height:800px;
+                background-size: cover;
+                background-image: url('./../img/AlpliBar/alplibar-6.jpg');
+            }
+            .alplibar6{
+                width: 100%;
+                height:800px;
+                background-size: cover;
+                background-image: url('./../img/AlpliBar/alplibar-7.jpg');
+            }
+            .alplibar7{
+                width: 100%;
+                height:800px;
+                background-size: cover;
+                background-image: url('./../img/AlpliBar/alplibar-8.jpg');
+            }
+            .alplibar8{
+                width: 100%;
+                height:800px;
+                background-size: cover;
+                background-image: url('./../img/AlpliBar/alplibar-9.jpg');
+            }
+            
+        }
+
+        .left-arrow{
+            position: absolute;
+            left: 2%;
+            top: 682px;
+
+            width: 80px;
+            height: 15px;
+            background-size: cover;
+            background-image: url('../img/slider-arrow.svg');
+            z-index: 8;
+            -webkit-transform:rotate(-10deg);
+            -moz-transform:rotate(180deg);
+             -ms-transform:rotate(180deg);
+              -o-transform:rotate(180deg);
+                 transform:rotate(180deg); 
+            // position: absolute;
+        }
+        .right-arrow{
+            position: absolute;
+            right: 2%;
+            top: 682px;
+
+            width: 80px;
+            height: 15px;
+            background-size: cover;
+            background-image: url('../img/slider-arrow.svg');
+            // position: absolute;
+        }
+        .slider-dot-container{
+            width: 100%;
+            height: 20px;
+            padding-right: 3.75%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+
+            .slider-dots{
+                width: 220px;
+                padding-left: 10px;
+                padding-right: 0px;
+                height: 30px;
+                position: relative;
+                right: 0px;
+                top:0px;
+                display: flex;
+                flex-direction: row;
+                // background-color: yellow;
+                align-items: flex-end;
+                justify-content: space-between;
+               
+                .black-dot{
+                    background-color: black;
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 50%;
+                    &:first-child{
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                    }
+                }
+                .blue-dot{
+                    background-color: $blue;
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 50%;
+                    &:first-child{
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                    }
+                }
+                
+            }
+        }
+    }
+}

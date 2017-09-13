@@ -1,0 +1,131 @@
+.punto-italiano{
+    .story-nav{
+        width: 100%;
+        height: 210px;
+    }
+    .story-slider{
+        
+        width: 100%;
+        height: 400px;
+        .slider-image{
+            width: 92.5%;
+            margin-top: 80px;
+            margin-left: 3.75%;
+            height: auto;
+            // background-image:url('./../img/previewPics/alpli-bar.jpg');
+            .puntoitaliano0{
+                width: 100%;
+                height:800px;
+                background-size: cover;
+                background-image: url('./../img/PuntoItaliano/puntoitaliano-1.jpg');
+            }
+            .puntoitaliano1{
+                width: 100%;
+                height:800px;
+                background-size: cover;
+                background-image: url('./../img/PuntoItaliano/puntoitaliano-2.jpg');
+            }
+            .puntoitaliano2{
+                width: 100%;
+                height:800px;
+                background-size: cover;
+                background-image: url('./../img/PuntoItaliano/puntoitaliano-3.jpg');
+            }
+            .puntoitaliano3{
+                width: 100%;
+                height:800px;
+                background-size: cover;
+                background-image: url('./../img/PuntoItaliano/puntoitaliano-4.jpg');
+            }
+            .puntoitaliano4{
+                width: 100%;
+                height:800px;
+                background-size: cover;
+                background-image: url('./../img/PuntoItaliano/puntoitaliano-5.jpg');
+            }
+            .puntoitaliano5{
+                width: 100%;
+                height:800px;
+                background-size: cover;
+                background-image: url('./../img/PuntoItaliano/puntoitaliano-6.jpg');
+            }
+            
+        }
+
+        .left-arrow{
+            position: absolute;
+            left: 2%;
+            top: 682px;
+
+            width: 80px;
+            height: 15px;
+            background-size: cover;
+            background-image: url('../img/slider-arrow.svg');
+            z-index: 8;
+            -webkit-transform:rotate(-10deg);
+            -moz-transform:rotate(180deg);
+             -ms-transform:rotate(180deg);
+              -o-transform:rotate(180deg);
+                 transform:rotate(180deg); 
+            // position: absolute;
+        }
+        .right-arrow{
+            position: absolute;
+            right: 2%;
+            top: 682px;
+
+            width: 80px;
+            height: 15px;
+            background-size: cover;
+            background-image: url('../img/slider-arrow.svg');
+            // position: absolute;
+        }
+        .slider-dot-container{
+            width: 100%;
+            height: 20px;
+            padding-right: 3.75%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+
+            .slider-dots{
+                width: 220px;
+                padding-left: 10px;
+                padding-right: 0px;
+                height: 30px;
+                position: relative;
+                right: 0px;
+                top:0px;
+                display: flex;
+                flex-direction: row;
+                // background-color: yellow;
+                align-items: flex-end;
+                justify-content: space-between;
+               
+                .black-dot{
+                    background-color: black;
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 50%;
+                    &:first-child{
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                    }
+                }
+                .blue-dot{
+                    background-color: $blue;
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 50%;
+                    &:first-child{
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                    }
+                }
+                
+            }
+        }
+    }
+}

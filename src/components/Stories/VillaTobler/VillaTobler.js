@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import {Link} from 'react-router-dom'
-export default class Weinschenke extends Component {
+export default class VillaTobler extends Component {
     constructor(){
         super()
         this.state={
-            storyName:'weinschenke',
+            storyName:'villatobler',
             activePic:0,
         }
     
@@ -50,7 +50,7 @@ export default class Weinschenke extends Component {
         //     backgroundImage:url(`./img/previewPics/${this.storyNameParser(this.state.featuredStories[this.state.activeFeature].name)}.jpg`)
         // }
         return (
-            <div className='weinschenke'>
+            <div className='villa-tobler'>
                 <div className='story-nav'>
                 </div>
                 <div className='story-slider'>
@@ -70,9 +70,7 @@ export default class Weinschenke extends Component {
                             <div className={this.state.activePic===2?'black-dot':'blue-dot'} value={2} onClick={()=>this.handleSelect(2)}/>
                             <div className={this.state.activePic===3?'black-dot':'blue-dot'} value={3} onClick={()=>this.handleSelect(3)}/>
                             <div className={this.state.activePic===4?'black-dot':'blue-dot'} value={4} onClick={()=>this.handleSelect(4)}/>
-                            <div className={this.state.activePic===5?'black-dot':'blue-dot'} value={5} onClick={()=>this.handleSelect(5)}/>
-                            <div className={this.state.activePic===6?'black-dot':'blue-dot'} value={6} onClick={()=>this.handleSelect(6)}/>
-                            <div className={this.state.activePic===7?'black-dot':'blue-dot'} value={7} onClick={()=>this.handleSelect(7)}/>
+                            
                             
                         </div>
                     </div>
