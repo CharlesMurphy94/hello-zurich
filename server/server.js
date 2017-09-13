@@ -77,7 +77,7 @@ const express = require('express'),
             db.getFavorites(activeUser.id).then(favorites=>{
                 res.status(200).send(favorites)
             })
-        }
+        } else res.status(200).send(['no favorites'])
     })
     app.post('/addFavorites/:story_id',(req,res)=>{
         var db = req.app.get('db');

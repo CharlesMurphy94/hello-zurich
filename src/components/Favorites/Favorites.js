@@ -15,11 +15,11 @@ export default class List extends Component {
 
     componentDidMount(){
         axios.get('http://localhost:3030/favorites').then(res=>{
-            // console.log(res.data)
+            if(res.data[0]!=='no favorites'){
             this.setState({favorites: res.data})
+            }
         })
     }
-
     
     updateFavorites(){
         axios.get('http://localhost:3030/favorites').then(res=>{

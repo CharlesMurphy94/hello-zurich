@@ -20,17 +20,22 @@ export default class List extends Component {
         // this.setState({stories: res.data})
             axios.get('http://localhost:3030/favorites').then(res=>{
                 // console.log(`this is the ${res.data}`)
-                let tempFavIds = res.data.map((e,i,a)=>{
-                    return e.story_id;
-                });
-                // this.setState({favorites:res.data})
-                for(let i=0;i<tempStories.length;i++){
-                    tempStories[i].favorited = tempFavIds.includes(tempStories[i].id)
+                
+                if(res.data[0]==='no favorites') {
+                    this.setState({stories:tempStories});
+                } else{
+                    let tempFavIds = res.data.map((e,i,a)=>{
+                        return e.story_id;
+                    });
+                    // this.setState({favorites:res.data})
+                    for(let i=0;i<tempStories.length;i++){
+                        tempStories[i].favorited = tempFavIds.includes(tempStories[i].id)
+                    }
+                    this.setState({stories:tempStories});
                 }
-                this.setState({stories:tempStories});
-
             })
         })
+            
         
 
     }
