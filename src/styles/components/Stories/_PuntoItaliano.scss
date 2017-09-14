@@ -51,35 +51,61 @@
             }
             
         }
-
-        .left-arrow{
+        .slide-left{
             position: absolute;
+            width: 80px;
+            height: 800px;
             left: 2%;
-            top: 682px;
-
-            width: 80px;
-            height: 15px;
-            background-size: cover;
-            background-image: url('../img/slider-arrow.svg');
-            z-index: 8;
-            -webkit-transform:rotate(-10deg);
-            -moz-transform:rotate(180deg);
-             -ms-transform:rotate(180deg);
-              -o-transform:rotate(180deg);
-                 transform:rotate(180deg); 
-            // position: absolute;
+            top: 290px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            .left-arrow{
+                width: 80px;
+                height: 15px;
+                background-size: cover;
+                background-image: url('../img/slider-arrow.svg');
+                z-index: 8;
+                -webkit-transform:rotate(-10deg);
+                -moz-transform:rotate(180deg);
+                 -ms-transform:rotate(180deg);
+                  -o-transform:rotate(180deg);
+                     transform:rotate(180deg); 
+                // position: absolute;
+            }
         }
-        .right-arrow{
+        .slide-right{
             position: absolute;
-            right: 2%;
-            top: 682px;
-
+            height: 800px;
             width: 80px;
-            height: 15px;
-            background-size: cover;
-            background-image: url('../img/slider-arrow.svg');
-            // position: absolute;
+            right: 2%;
+            top: 290px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            .right-arrow{
+                width: 80px;
+                height: 15px;
+                background-size: cover;
+                background-image: url('../img/slider-arrow.svg');
+                z-index: 8;
+                
+            }
         }
+        
+        // .right-arrow{
+        //     position: absolute;
+        //     right: 2%;
+        //     top: 682px;
+
+        //     width: 80px;
+        //     height: 15px;
+        //     background-size: cover;
+        //     background-image: url('../img/slider-arrow.svg');
+        //     // position: absolute;
+        // }
         .slider-dot-container{
             width: 100%;
             height: 20px;
@@ -132,8 +158,13 @@
         width: 100%;
         padding-top: 595px;
         color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
         .page-header{
-            margin: 0px 180px 0px 180px;
+            width: 1180px;
+            // margin: 0px 180px 0px 180px;
             .header-title{
                 font-family: 'Playfair Display';
                 font-size: 50px;
@@ -144,19 +175,23 @@
             
         }
         .credit{
-            margin: 72px 180px 0px 180px;
+            width: 1180px;
+            margin-top: 72px;
         }
         .intro{
-            margin: 15px 180px 0px 180px;
+            width: 1180px;
+            margin-top: 15px;
             font-size: 27px;
             line-height: 40px;
         }
         .toMap{
+            width: 1180px;
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
             align-items: center;
-            margin: 70px 180px 155px 180px;
+            margin-top: 70px;
+            margin-bottom: 135px;
             color: $blue;
             .fa{
                 font-size: 40px;
@@ -164,7 +199,8 @@
             }
         }
         .main-story{
-            margin: 20px 323px 0px 323px;
+            width: 940px;
+            margin-top: 20px;
             line-height:33px;
         }
         .image-center-container{
@@ -225,11 +261,14 @@
         }
 
         .subheader{
+            width: 940px;
             font-size: 32px;
-            margin: 170px 323px 0px 323px;
+            margin-top: 170px;
         }
         .block-quote{
-            margin: 170px 323px 170px 323px;
+            width: 940px;
+            margin-top: 170px;
+            margin-bottom: 170px;
             .quote{
                 font-family: 'Playfair Display';
                 font-size: 50px;
