@@ -58,9 +58,11 @@ export default class VillaTobler extends Component {
                         <div className={this.state.storyName+this.state.activePic}>
                         </div>
                     </div>
-                    <div className='left-arrow' value='--' onClick={this.handleLeft}>
+                    <div className='slide-left'value='--' onClick={this.handleLeft}>
+                        <div className='left-arrow' ></div>
                     </div>
-                    <div className='right-arrow' value='++' onClick={this.handleRight}>
+                    <div className='slide-right'value='--' onClick={this.handleRight}>
+                        <div className='right-arrow' ></div>
                     </div>
                     
                     <div className='slider-dot-container'>
@@ -74,46 +76,65 @@ export default class VillaTobler extends Component {
                             
                         </div>
                     </div>
+                </div>
+                <div className='story-body'>
                     <div className='page-header'>
-                        <h3 className='header-title'>Weinschenke</h3>
-                        <p className='header-blurb'>A glass of wine on the most enchanting roof terrace in Zurich.</p>
+                        <h3 className='header-title'>Villa Tobler</h3>
+                        <p className='header-blurb'>
+                            Stefanie Rigutto shows us one of her favourite places: Villa Tobler’s forgotten park, tucked away from the city’s hustle and bustle.
+                        </p>
+                    </div>   
+                    <div className='credit'>
+                        <p>Text: Stefanie Rigutto Photos: Basil Stücheli</p>
                     </div>
-
-                </div>
-                <div className='credit'>
-                    <p>Text: Stefanie Rigutto Photos: Basil Stücheli</p>
-                </div>
-                <h4 className='intro'>
-                    The Weinschenke on Hirschengasse is the opposite of trendy – which is why it’s one of the most relaxed places in Zurich. Surrounded by ancient walls, overlooked by pigeons and far from the hustle and bustle of the Niederdorf, you can drink a cool glass of Petite Arvine and gaze out over the city’s rooftops.
-                </h4>
-                <div className='toMap'>
-                    <h4>Go to details and map</h4>
-                </div>
-                <p className='main-story'>
-                Hirschengasse is, shall we say, not the liveliest street in the Niederdorf. And I say that lovingly, because I’ve lived on this street for five years. It is dark, cold, narrow and musty – the opposite of inviting. It’s not a street that you would just happen to wander down. You have to know what you're after – such as a glass of wine on Zurich’s most well-hidden roof terrace.
-                </p>
-                <div className='image-center'></div>
-                <div className='image-double'></div>
-                <p className='main-story'>
-                Of course, the Weinschenke is also a wonderfully relaxed place to spend cold and rainy days philosophising. ‘Drink wine and you will sleep well. Sleep, and you will not sin. Avoid sin, and you will be saved. Ergo, drink wine and be saved.’ So goes the board by the entrance.
-                </p>
-                <div className='parallax'></div>
-                <p className='main-story'>
-                And where better to be saved than here? The vaulted ceiling catapults you directly back into the Middle Ages, while candles illuminate the ceiling, and beneath a glass pane on the floor you can see an old 14th-century well still full of water. The cellar was once used as a forge, then as a stable and later as a storage room. It has been home to the Weinschenke since 2002.
-                </p>
-                <div className='image-double'></div>
-                <p className='main-story'>
-                My ritual in the Weinschenke goes like this: first, you take a seat in the cellar, choose a glass of one of the 120 wines on offer, and let yourself soak up the atmosphere. Then you step into the lift, press the button for the ninth floor and go up. Above, it’s as if the sun is rising.
-                </p>
-                <div className='image-overlap'></div>
-                <div className='text-overlap'>
-                    <p>
-                    The sky isn’t endless, hemmed in a little by the roofs of the Niederdorf, but that somehow makes it more beautiful. It’s as if the old town rests here for a moment. You sit between the plants, listen to the pigeons cooing and enjoy knowing that you’ve discovered such a well-kept secret in the heart of the city.
+                    <h4 className='intro'>
+                        Why go to the lake when it’s so much more relaxed in the old town? The garden at Villa Tobler is perhaps the quietest place around – forgotten by tourists and locals alike. Huge copper beeches provide shade while you swear eternal love by the dragon fountain. Is there anything better?
+                    </h4>
+                    <div className='toMap'>
+                        <h4>Go to details and map</h4>
+                    </div>
+                    <p className='main-story'>
+                        Walking along Oberdorfstrasse involves dodging between groups of tourists, avoiding the dog barking in front of the children’s book shop and the young couple talking at the top of their voices just ahead. We flee into Trittligasse and the silence swallows us. Peace and quiet! We climb upwards and then slope back down; the many tiny steps are the purest kind of meditation. Soon you can hear nothing but the song of a blackbird.
                     </p>
+                    <div className='block-quote'>
+                        <p className='quote'>
+                        The silence swallows us.
+                        </p>
+                        <div className='horizontal-line'/>
+                    </div>
+                    <p className='main-story'>
+                        At the end of the alley, the garden of the stately Villa Tobler awaits. It’s a place you usually have to yourself. For any history buffs: the villa was built in the middle of the 19th century in the late classical style – and by the same architect who designed Zurich’s railway station, now the main station.
+                    </p>
+                    <div className='image-center-container'>
+                        <div className='image img-1' />
+                    </div>
+                    <div className='image-double-container'>
+                        <div className='image img-2' />
+                        <div className='image img-3' />
+                    </div>
+                    <p className='main-story'>
+                        It is a park for all seasons. In spring, you can sit beneath the shelter of the villa’s wall and watch the daffodils push their way out of the earth. Summer is the time to sit by the fountain with its gold mosaic and enjoy the coolness of the water. The stone bench by the dragon fountain could have been made for two lovers – where would you swear eternal fidelity if not here? In autumn, the leaves drift into mountainous piles that you can wade through as if through a roaring river. I am particularly fond of the imposing beech trees that were planted when the garden was first created. The trunks are so thick that you need a handful of friends to encircle them. And in winter? The park is even more peaceful than usual.
+                    </p>
+                    <div className='image-center-container'>
+                        <div className='image img-4' />
+                    </div>
+                    <div className='image-double-container'>
+                        <div className='image img-5' />
+                        <div className='image img-6' />
+                    </div>
+                    <p className='main-story'>
+                        In the garden at Villa Tobler, you’re likely to be startled by your own sneeze – it’s that quiet and peaceful here. If the sound of a car horn didn’t occasionally drift over, you would never think that you were in the centre of Switzerland’s largest city. There are no barbecues here, no football and no boot camps; no music, no ice cream sellers and no frisbee players. In short: Villa Tobler’s garden is wonderfully boring. It’s the perfect place to do nothing except sit and listen to the sound of silence.
+                    </p>
+                    <div className='overlap'>
+                        <div className='image-overlap img-7'></div>
+                        <div className='text-overlap'>
+                            <h1>By the way</h1>
+                            <p>
+                            If you want to extend the peace and quiet a little on your way back to Oberdorf, walk down Frankengasse – definitely the loneliest alley in the old town! The residents here have put flower pots in front of their houses, there is a cat ladder going up the wall and people say hello in the street. On Frankengasse, all is right with the world.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-
-
-
             </div>
         );
     }

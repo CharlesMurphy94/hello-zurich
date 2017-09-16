@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
+// import { TweenMax} from 'gsap'
 ;
 class ListItem extends Component{
     constructor(props){
@@ -15,12 +16,20 @@ class ListItem extends Component{
         }
         this.storyNameParser = this.storyNameParser.bind(this);
         this.toggleFavorite = this.toggleFavorite.bind(this);
+        // this.handleHover = this.handleHover.bind(this);
         // this.checkForFavorite = this.checkForFavorite.bind(this);
     }
 
     componentDidMount(){
         console.log(this.state)
     }
+
+    // handleHover = (e)=>{
+    //     TweenMax.to(this, .35,{
+    //         width: '300px'
+    //     } )
+    // }
+    
 
     storyNameParser = (storyName)=>{
         let array = storyName.toLowerCase().split('').map((e,i,a)=>{
@@ -50,21 +59,24 @@ class ListItem extends Component{
     }
     render(){
         return(
-            <Link to={`/story/${this.storyNameParser(this.state.storyName)}`}>
-            <div className='list-item'>
-                {/* <img className="preview-pic" src={`../../../img/previewPics/${this.storyNameParser(this.state.storyName)}.jpg`}>
-                </img> */}
-                <div className={this.storyNameParser(this.state.storyName)}>
-                </div>
-                <div className='list-item-body'>
-                    <h1>{this.state.storyName}</h1>  
-                    <p>{this.state.storyBlurb}</p>
-                </div>
+            <div className='list-item-container'>
                 <div className='favorite-icon'>
                     <i className={this.state.favorited?'fa fa-heart':'fa fa-heart-o'} onClick={this.toggleFavorite}></i>
                 </div>
+                <Link to={`/story/${this.storyNameParser(this.state.storyName)}`}>
+                    <div className='list-item' onHover={this.shrinkHeart}>
+                        {/* <img className="preview-pic" src={`../../../img/previewPics/${this.storyNameParser(this.state.storyName)}.jpg`}>
+                        </img> */}
+                        <div className={this.storyNameParser(this.state.storyName)}>
+                        </div>
+                        <div className='list-item-body'>
+                            <h1>{this.state.storyName}</h1>  
+                            <p>{this.state.storyBlurb}</p>
+                        </div>
+                        
+                    </div>
+                </Link>
             </div>
-            </Link>
                 
 
         )

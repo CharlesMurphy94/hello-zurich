@@ -129,6 +129,7 @@
                 justify-content: space-between;
                
                 .black-dot{
+                    cursor: pointer;
                     background-color: black;
                     width: 6px;
                     height: 6px;
@@ -140,6 +141,7 @@
                     }
                 }
                 .blue-dot{
+                    cursor: pointer;
                     background-color: $blue;
                     width: 6px;
                     height: 6px;

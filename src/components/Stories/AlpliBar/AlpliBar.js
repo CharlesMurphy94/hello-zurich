@@ -58,9 +58,11 @@ export default class AlpliBar extends Component {
                         <div className={this.state.storyName+this.state.activePic}>
                         </div>
                     </div>
-                    <div className='left-arrow' value='--' onClick={this.handleLeft}>
+                    <div className='slide-left'value='--' onClick={this.handleLeft}>
+                        <div className='left-arrow' ></div>
                     </div>
-                    <div className='right-arrow' value='++' onClick={this.handleRight}>
+                    <div className='slide-right'value='--' onClick={this.handleRight}>
+                        <div className='right-arrow' ></div>
                     </div>
                     
                     <div className='slider-dot-container'>
@@ -76,46 +78,73 @@ export default class AlpliBar extends Component {
                             <div className={this.state.activePic===8?'black-dot':'blue-dot'} value={8} onClick={()=>this.handleSelect(8)}/>
                         </div>
                     </div>
+                </div>
+                <div className='story-body'>
                     <div className='page-header'>
-                        <h3 className='header-title'>Weinschenke</h3>
-                        <p className='header-blurb'>A glass of wine on the most enchanting roof terrace in Zurich.</p>
+                        <h3 className='header-title'>Älpli-Bar</h3>
+                        <p className='header-blurb'>
+                            Katie Halter is the owner of this traditional folk music bar that has played host to acts such as Green Day and Mumford & Sons.
+                        </p>
+                    </div>   
+                    <div className='credit'>
+                        <p>Text: David Sarasin Photos: Raisa Durandi</p>
                     </div>
-
-                </div>
-                <div className='credit'>
-                    <p>Text: Stefanie Rigutto Photos: Basil Stücheli</p>
-                </div>
-                <h4 className='intro'>
-                    The Weinschenke on Hirschengasse is the opposite of trendy – which is why it’s one of the most relaxed places in Zurich. Surrounded by ancient walls, overlooked by pigeons and far from the hustle and bustle of the Niederdorf, you can drink a cool glass of Petite Arvine and gaze out over the city’s rooftops.
-                </h4>
-                <div className='toMap'>
-                    <h4>Go to details and map</h4>
-                </div>
-                <p className='main-story'>
-                Hirschengasse is, shall we say, not the liveliest street in the Niederdorf. And I say that lovingly, because I’ve lived on this street for five years. It is dark, cold, narrow and musty – the opposite of inviting. It’s not a street that you would just happen to wander down. You have to know what you're after – such as a glass of wine on Zurich’s most well-hidden roof terrace.
-                </p>
-                <div className='image-center'></div>
-                <div className='image-double'></div>
-                <p className='main-story'>
-                Of course, the Weinschenke is also a wonderfully relaxed place to spend cold and rainy days philosophising. ‘Drink wine and you will sleep well. Sleep, and you will not sin. Avoid sin, and you will be saved. Ergo, drink wine and be saved.’ So goes the board by the entrance.
-                </p>
-                <div className='parallax'></div>
-                <p className='main-story'>
-                And where better to be saved than here? The vaulted ceiling catapults you directly back into the Middle Ages, while candles illuminate the ceiling, and beneath a glass pane on the floor you can see an old 14th-century well still full of water. The cellar was once used as a forge, then as a stable and later as a storage room. It has been home to the Weinschenke since 2002.
-                </p>
-                <div className='image-double'></div>
-                <p className='main-story'>
-                My ritual in the Weinschenke goes like this: first, you take a seat in the cellar, choose a glass of one of the 120 wines on offer, and let yourself soak up the atmosphere. Then you step into the lift, press the button for the ninth floor and go up. Above, it’s as if the sun is rising.
-                </p>
-                <div className='image-overlap'></div>
-                <div className='text-overlap'>
-                    <p>
-                    The sky isn’t endless, hemmed in a little by the roofs of the Niederdorf, but that somehow makes it more beautiful. It’s as if the old town rests here for a moment. You sit between the plants, listen to the pigeons cooing and enjoy knowing that you’ve discovered such a well-kept secret in the heart of the city.
+                    <h4 className='intro'>
+                        The Älpli Bar has been a Zurich institution for Swiss folk music for decades – thanks in part to the host, Katie Halter. She let us in on the secret of the recipe of the bar’s hearty speciality, Älpli milk.
+                    </h4>
+                    <div className='toMap'>
+                        <h4>Go to details and map</h4>
+                    </div>
+                    <p className='main-story'>
+                        Stepping into the Niederdorf feels like stepping back in time. Walking through the narrow streets with Katie Halter, owner of the Älpli Bar, we're given glimpses of what life would have been like in an old alpine village. We walk past the florist, so of course Halter stops for a chat; then we cross by the old shoe shop, and she can tell us all about that too. Her traditional Swiss outfit completes the nostalgic look.
                     </p>
+                    <div className='image-center-container'>
+                        <div className='image img-1' />
+                    </div>
+                    <div className='image-double-container-ls'>
+                        <div className='image img-2' />
+                        <div className='image img-3' />
+                    </div>
+                    <p className='main-story'>
+                        The Älpli Bar itself, which Halter has run for more than 30 years, also looks like a blast from the past. On the first floor of this medieval house on Ankengasse, guests sit at massive wooden tables decorated with thousands of carvings. The wall is adorned with an alpine panorama showing the Tödi and the Sand Alp, while the bar proudly displays the names of prize-winning cows. The balcony offers the slogan: ‘Uf der Alp da gits kei Sünd. Zum Trinke het me immer Gründ’, or, roughly, ‘Up in the mountains, there are no sins. There is always a reason to drink.’
+                    </p>
+                    <p className='main-story'>
+                        This traditional bar may hardly seem typical for Zurich at first glance, but for years it has attracted fans of Ländler folk music from all across Switzerland – and with good reason: The bar’s small gallery has bands playing 365 days a year. Alongside the expected music lovers, the audience is also full of nostalgic young people and curious tourists who hope to experience a bit of Swiss folklore.
+                    </p>
+                    <p className='main-story'>
+                        You could argue that this is simply a carefully constructed setting, not a centuries-old custom; artificially introduced rather than home grown. And that’s true – and yet, Ländler has played an important role in the Niederdorf since the end of the 19th century. What's more, this area, far from any rural idyll, has always been a place where traditional Swiss music has been developed and popularised. Some even claim that Ländler was created in the heart of Zurich.
+                    </p>
+                    <div className='block-quote'>
+                        <p className='quote'>
+                            ‘I owe all the traditions to my guests and to Aunt Klara!’
+                        </p>
+                        <div className='horizontal-line'/>
+                        <p className='quote-credit'>Katie Halter, owner</p>
+                    </div>
+                    <p className='main-story'>
+                        Anyway – no matter how it got here, what’s important is that you can now sit down at one of these great tables and order Älpli milk, the bar’s signature drink. The recipe for this dangerously sweet drink, served in huge tankards, was a closely-held secret for many years. During our visit, however, Halter lets it slip: it’s made of an egg – fresh from the farm – white wine, brandy, and of course, sugar.
+                    </p>
+                    <p className='main-story'>
+                        Anyone who needs to line their stomach to accompany this hearty drink can order a cold platter – which of course is accompanied by the classic Swiss seasonings Aromat and Maggi – or a fondue in winter.
+                    </p>
+                    <div className='image-center-container'>
+                        <div className='image img-4' />
+                    </div>
+                    <p className='main-story'>
+                        ‘I owe all the traditions to my guests,’ says Halter, ‘and to Aunt Klara!’ Her Aunt Klara ran the Älpli Bar in the sixties, when prostitutes still lived in the attic. ‘She was a real character who knew how exactly to deal with guests.’ Halter wanted to run things in the same way – and she succeeded. This is despite the many local changes since the sixties, not least the neighbours, who have become increasingly sensitive to noise. Halter doesn’t let it stop her, however.
+                    </p>
+                    <p className='main-story'>
+                        And so the three-piece band starts up right on time, and as the tables slowly start to fill up, the general mood rises. We meet some young Zurich locals who wanted to experience something away from the bar scene in Kreis 4. And a different experience is exactly what they found; they later said that it was like stumbling into an entirely different world.
+                    </p>
+                    <div className='overlap'>
+                        <div className='image-overlap img-5'></div>
+                        <div className='text-overlap'>
+                            <p>
+                                The bands Green Day and Mumford & Sons also found themselves inspired when they came to the Älpli Bar after playing a concert in Zurich, and even performed some songs on stage. And the only way that you can really understand the unique mix of traditional and modern to be found in a place like the Älpli Bar – is to visit for yourself.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-
-
-
             </div>
         );
     }

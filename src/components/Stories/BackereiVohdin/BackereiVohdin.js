@@ -58,9 +58,11 @@ export default class BackereiVohdin extends Component {
                         <div className={this.state.storyName+this.state.activePic}>
                         </div>
                     </div>
-                    <div className='left-arrow' value='--' onClick={this.handleLeft}>
+                    <div className='slide-left'value='--' onClick={this.handleLeft}>
+                        <div className='left-arrow' ></div>
                     </div>
-                    <div className='right-arrow' value='++' onClick={this.handleRight}>
+                    <div className='slide-right'value='--' onClick={this.handleRight}>
+                        <div className='right-arrow' ></div>
                     </div>
                     
                     <div className='slider-dot-container'>
@@ -76,46 +78,55 @@ export default class BackereiVohdin extends Component {
                             
                         </div>
                     </div>
+                </div>
+                <div className='story-body'>
                     <div className='page-header'>
-                        <h3 className='header-title'>Weinschenke</h3>
-                        <p className='header-blurb'>A glass of wine on the most enchanting roof terrace in Zurich.</p>
+                        <h3 className='header-title'>Bäckerei Vohdin</h3>
+                        <p className='header-blurb'>
+                            Elvira and Urs Vohdin run what may be the smallest and oldest bakery in Zurich.
+                        </p>
+                    </div>   
+                    <div className='credit'>
+                        <p>Text: Stefanie Rigutto Photos: Basil Stücheli</p>
                     </div>
-
-                </div>
-                <div className='credit'>
-                    <p>Text: Stefanie Rigutto Photos: Basil Stücheli</p>
-                </div>
-                <h4 className='intro'>
-                    The Weinschenke on Hirschengasse is the opposite of trendy – which is why it’s one of the most relaxed places in Zurich. Surrounded by ancient walls, overlooked by pigeons and far from the hustle and bustle of the Niederdorf, you can drink a cool glass of Petite Arvine and gaze out over the city’s rooftops.
-                </h4>
-                <div className='toMap'>
-                    <h4>Go to details and map</h4>
-                </div>
-                <p className='main-story'>
-                Hirschengasse is, shall we say, not the liveliest street in the Niederdorf. And I say that lovingly, because I’ve lived on this street for five years. It is dark, cold, narrow and musty – the opposite of inviting. It’s not a street that you would just happen to wander down. You have to know what you're after – such as a glass of wine on Zurich’s most well-hidden roof terrace.
-                </p>
-                <div className='image-center'></div>
-                <div className='image-double'></div>
-                <p className='main-story'>
-                Of course, the Weinschenke is also a wonderfully relaxed place to spend cold and rainy days philosophising. ‘Drink wine and you will sleep well. Sleep, and you will not sin. Avoid sin, and you will be saved. Ergo, drink wine and be saved.’ So goes the board by the entrance.
-                </p>
-                <div className='parallax'></div>
-                <p className='main-story'>
-                And where better to be saved than here? The vaulted ceiling catapults you directly back into the Middle Ages, while candles illuminate the ceiling, and beneath a glass pane on the floor you can see an old 14th-century well still full of water. The cellar was once used as a forge, then as a stable and later as a storage room. It has been home to the Weinschenke since 2002.
-                </p>
-                <div className='image-double'></div>
-                <p className='main-story'>
-                My ritual in the Weinschenke goes like this: first, you take a seat in the cellar, choose a glass of one of the 120 wines on offer, and let yourself soak up the atmosphere. Then you step into the lift, press the button for the ninth floor and go up. Above, it’s as if the sun is rising.
-                </p>
-                <div className='image-overlap'></div>
-                <div className='text-overlap'>
-                    <p>
-                    The sky isn’t endless, hemmed in a little by the roofs of the Niederdorf, but that somehow makes it more beautiful. It’s as if the old town rests here for a moment. You sit between the plants, listen to the pigeons cooing and enjoy knowing that you’ve discovered such a well-kept secret in the heart of the city.
+                    <h4 className='intro'>
+                        If any shop in Zurich’s old town can be described as an institution, then it’s the Vohdin bakery. The ovens have been going at Oberdorfstrasse 12 since 1626 (!). Elvira and Urs Vohdin sell perhaps the most delicate amaretti in Switzerland – and in only 4.3 square metres of shop space.
+                    </h4>
+                    <div className='toMap'>
+                        <h4>Go to details and map</h4>
+                    </div>
+                    <p className='main-story'> 
+                        In the first few years that I lived in the old town, I was always walking past Vohdin. All you can see of the bakery from the outside is a tiny window, but inside, the baked goods tower up to the ceiling. This is Elvira Vohdin’s tiny kingdom. At 5:40 am every morning, she fills the shelves with fresh bread, drapes the pretzels and slices the pastries. At 7:30 am, she opens the shop. The 52-year-old, dressed in an elegant traditional Swiss outfit with lace, greets most of the customers by name as she wraps apple doughnuts in wafer-thin paper and hands the change back through the tiny window.
                     </p>
+                    <div className='image-double-container'>
+                        <div className='image img-1' />
+                        <div className='image img-2' />
+                    </div>
+                    <p className='main-story'>
+                        Her husband Urs Vohdin is hard at work back in the bakehouse. He is 55 years old, has his long white hair tied back in a ponytail, and wears chequered baker’s trousers and Birkenstocks. Country music seeps out of his iPod. He is just in the process of baking his famous pretzels – made to an ancestral recipe – in the stone oven dating back to 1945. The Japanese broadcaster Nippon TV reported on them a few years ago. ‘After that, we had huge numbers of Japanese customers who wanted to try our pretzels,’ laughs Urs.
+                    </p>
+                    <div className='image-double-container'>
+                        <div className='image img-3' />
+                    </div>
+                    <p className='main-story'>
+                        The couple ask to be interviewed in their apartment on the first floor. The house is owned by the family; Urs’s mother lives above them. Gugelhupf pans in various sizes hang alongside the staircase. ‘They came from my father-in-law,’ says Elvira, leading the way into the kitchen, where fresh apple doughnuts await: wafer-thin pastry, grated apples, sultanas and a hint of cinnamon – poetry on a plate. Urs Vohdin’s great-grandfather, who was born in Germany, actually wanted to emigrate to America, but he was told that there was also work for skilled bakers in Switzerland. He came to Zurich, fell in love with a local, and bought the bakery on Oberdorfstrasse in 1895. In 1926, Urs Vohdin’s grandfather took over the business, and 37 years later it passed to Urs’s parents.
+                    </p>
+                    <div className='image-double-container-ls'>
+                        <div className='image img-4' />
+                        <div className='image img-5' />
+                    </div>
+                    <p className='main-story'>
+                        Urs relates how, as a three-year-old, he announced that he wanted to become a baker. Baking was always part of his life. As a child, he helped his father in the bakery: topping the pastries, carrying the bread into the shop, shaping Grittibänz figures and cutting out Christmas treats. In 1990, he and Elvira took over the business from his father. Since then, Urs Vohdin arrives in the bakery every day at 3:30 am, even 2:30 am on Fridays, because he needs to braid the plait-shaped Zopf bread. Breakfast is at 9:30 am, before it’s back into the bakery. A 15-hour day is normal for Urs Vohdin. And what do they do to take a break? ‘We like to travel,’ they say. Their last trip was to Fuerteventura, the one before that to Australia.
+                    </p>
+                    <div className='overlap'>
+                        <div className='image-overlap img-6'></div>
+                        <div className='text-overlap'>
+                            <p>
+                                Their biggest motivation, however, is their customers’ compliments. ‘When we’re sold out by the evening,’ says Elvira, ‘that makes us very happy. And it means that we’ve calculated well and don’t have to throw anything away.’ Urs adds: ‘Like when the children come at midday and eat absolutely everything.’ He laughs and bites into an amaretto that he baked fresh that morning. Now, the only thing left to ask is: what is the secret of the amaretti? Why do some of their customers travel specially from all over Switzerland to buy them?’ Urs Vohdin only grins in reply. His wife says: ‘Because we bake them with love.’
+                            </p>
+                        </div>
+                    </div>
                 </div>
-
-
-
             </div>
         );
     }

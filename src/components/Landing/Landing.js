@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import vid from '../../img/landing-background.mp4';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 
 export default class Landing extends Component {
@@ -87,10 +88,12 @@ export default class Landing extends Component {
                         Chosen for you
                     </h3>
                     <div className='story-slider'>
-                        <div className='slider-image'>
-                            <div className={this.storyNameParser(this.state.featuredStories[this.state.activeFeature].name)}>
+                        <Link to={`/story/${this.storyNameParser(this.state.featuredStories[this.state.activeFeature].name)}`}>
+                            <div className='slider-image'>
+                                <div className={this.storyNameParser(this.state.featuredStories[this.state.activeFeature].name)}>
+                                </div>
                             </div>
-                        </div>
+                        </Link>    
                         <div className='left-arrow' value='--' onClick={this.handleLeft}>
                         </div>
                         <div className='right-arrow' value='++' onClick={this.handleRight}>
@@ -106,12 +109,15 @@ export default class Landing extends Component {
                                 
                             </div>
                         </div>
-                        <div className='slider-text'>
-                            <h3 className='slider-text-header'>{this.state.featuredStories[this.state.activeFeature].name}</h3>
-                            <p className='slider-text-blurb'>{this.state.featuredStories[this.state.activeFeature].blurb}</p>
-                        </div>
+                        <Link to={`/story/${this.storyNameParser(this.state.featuredStories[this.state.activeFeature].name)}`}>
+                            <div className='slider-text'>
+                                <h3 className='slider-text-header'>{this.state.featuredStories[this.state.activeFeature].name}</h3>
+                                <p className='slider-text-blurb'>{this.state.featuredStories[this.state.activeFeature].blurb}</p>
+                            </div>
+                        </Link>   
 
                     </div>
+                    
                 </div>
 
 

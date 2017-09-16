@@ -11,7 +11,7 @@ import LesVideos from'./components/Stories/LesVideos/LesVideos'
 import BackereiVohdin from'./components/Stories/BackereiVohdin/BackereiVohdin'
 import Nordbrucke from'./components/Stories/Nordbrucke/Nordbrucke'
 import VillaTobler from'./components/Stories/VillaTobler/VillaTobler'
-import Condomeria from'./components/Stories/Condomeria/Condomeria'
+
 import BodegaEspanola from'./components/Stories/BodegaEspanola/BodegaEspanola'
 import AlpliBar from'./components/Stories/AlpliBar/AlpliBar'
 import {Switch, Route,} from 'react-router-dom';
@@ -31,7 +31,6 @@ export default(
         <Route path='/story/backerei-vohdin' component={ BackereiVohdin }></Route>
         <Route path='/story/nordbrucke' component={ Nordbrucke }></Route>
         <Route path='/story/villa-Tobler' component={ VillaTobler }></Route>
-        <Route path='/story/condomeria' component={ Condomeria }></Route>
         <Route path='/story/bodega-espanola' component={ BodegaEspanola }></Route>
         <Route path='/story/alpli-bar' component={ AlpliBar }></Route>
     </Switch>

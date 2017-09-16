@@ -62,8 +62,8 @@ export default class PuntoItaliano extends Component {
                         <div className='left-arrow' ></div>
                     </div>
                     <div className='slide-right'value='--' onClick={this.handleRight}>
-                    <div className='right-arrow' ></div>
-                </div>
+                        <div className='right-arrow' ></div>
+                    </div>
                     
                     <div className='slider-dot-container'>
                         <div className='slider-dots'>        
@@ -147,9 +147,7 @@ export default class PuntoItaliano extends Component {
                         </div>
                     </div>
                 </div>
-
-
             </div>
         );
     }
-  }
+}

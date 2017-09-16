@@ -24,7 +24,10 @@ export default class List extends Component {
     updateFavorites(){
         axios.get('http://localhost:3030/favorites').then(res=>{
             // console.log(res.data)
-            this.setState({favorites: res.data})
+            if(res.data[0]!=='no favorites'){
+                this.setState({favorites: res.data})
+            }
+            
             window.location.reload();
 
         })

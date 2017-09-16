@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 
 import router from './router';
 import Nav from './components/Nav/Nav'
+import Footer from './components/Footer/Footer'
 
 export default class App extends Component{
   render(){  
@@ -10,6 +11,7 @@ export default class App extends Component{
       <div className='app'>
         <Nav />
         { router }
+        <Footer />
       </div>
     );
   }

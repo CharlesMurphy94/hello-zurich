@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import MapContainer from './MapContainer.js'
 
 export default function Map (){
+    
+    
     return (
         <div className='list-view'>
             <div className='stories-nav'>

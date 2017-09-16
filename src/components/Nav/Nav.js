@@ -26,10 +26,10 @@ export default function Nav ( ){
             </div>
 
             <div className='nav-icons'>
-                <a href='http://localhost:3030/auth/'>
+                <a href={process.env.REACT_APP_LOGIN}>
                     <p className='nav-login'>Log in</p>
                 </a>
-                <a href='http://localhost:3030/auth/logout'>
+                <a href={process.env.REACT_APP_LOGOUT}>
                     <p className='nav-login'>Log Out</p>
                 </a>
 

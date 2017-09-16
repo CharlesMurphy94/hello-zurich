@@ -9,6 +9,10 @@ const express = require('express'),
     massive = require('massive'),
     app = express();
 
+    app.use( express.static( `${__dirname}/../build` ) );
+
+    
+
     app.use(bodyParser.json());
     app.use(cors());
     app.use(session({
@@ -18,6 +22,7 @@ const express = require('express'),
     }));
     app.use(passport.initialize());
     app.use(passport.session());
+
 
     let activeUser
 
@@ -107,6 +112,14 @@ const express = require('express'),
         }
     )
 
+    //------------Coordinates----------//
+    app.get('/coordinates',(req,res)=>{
+        var db = req.app.get('db');
+            db.getCoordinates().then(results=>{
+                res.status(200).send(results)
+            })
+    })
+
     //------------AUTH0-------------//
 
     app.get('/auth', passport.authenticate('auth0'));
@@ -142,6 +155,13 @@ const express = require('express'),
     })
 
     //------------- END AUTH0 --------------//
+
+
+    const path = require('path')
+    app.get('*', (req, res)=>{
+      res.sendFile(path.join(__dirname, '..','build','index.html'));
+    })
+    
     const port = 3030;
 
     app.listen(port,()=>{console.log(`Port ${port} is ouchea`)})
