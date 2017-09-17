@@ -106,7 +106,7 @@ export default class Weinschenke extends Component {
                     <p className='main-story'>
                     Of course, the Weinschenke is also a wonderfully relaxed place to spend cold and rainy days philosophising. ‘Drink wine and you will sleep well. Sleep, and you will not sin. Avoid sin, and you will be saved. Ergo, drink wine and be saved.’ So goes the board by the entrance.
                     </p>
-                    <div className='parallax'></div>
+                    <div className='paragraph-spacer'></div>
                     <p className='main-story'>
                     And where better to be saved than here? The vaulted ceiling catapults you directly back into the Middle Ages, while candles illuminate the ceiling, and beneath a glass pane on the floor you can see an old 14th-century well still full of water. The cellar was once used as a forge, then as a stable and later as a storage room. It has been home to the Weinschenke since 2002.
                     </p>

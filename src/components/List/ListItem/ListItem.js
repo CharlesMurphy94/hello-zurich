@@ -11,6 +11,7 @@ class ListItem extends Component{
         storyName: this.props.story.name,
         storyBlurb: this.props.story.blurb,
         storyId: this.props.story_id,
+        favorites: this.props.favorites,
         favoriteIcon:'',
         favorited:this.props.favorited
         }
@@ -47,6 +48,10 @@ class ListItem extends Component{
     // }
 
     toggleFavorite = ()=>{
+        if (this.state.favorites[0]==='no favorites'){
+            console.log('happened')
+            alert('Please log in to add stories to your favorites')
+        }
         if (this.state.favorited===false){
             axios.post(`http://localhost:3030/addFavorites/${this.state.storyId}`).then(res=>{
                 this.setState({favorited: true})

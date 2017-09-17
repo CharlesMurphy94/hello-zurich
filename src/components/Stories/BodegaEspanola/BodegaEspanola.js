@@ -117,6 +117,7 @@ export default class BodegaEspanola extends Component {
                     <p className='main-story'>
                     Schwarz’s book, which we keep flipping through during our conversation, also focuses on the guests. It shows large groups at large round tables; people who have known each other for a long time or, as Winistörfer and Schwarz explain, have just happened to meet each other for the first time that day. Most of the bodega is full of these large tables, some round and some square.
                     </p>
+                    <div className='paragraph-spacer'></div>
                     <p className='main-story'>
                         With a smile playing on his lips, Winistörfer tells another little story: ‘We once had some Americans who asked if they could take photos. They loved the large tables. They’re developing a new concept in America – it's called 'talking tables'. We’ve been doing that here for 140 years.’
                     </p>
@@ -131,6 +132,7 @@ export default class BodegaEspanola extends Component {
                     <p className='main-story'>
                         There is another important ingredient that makes the bodega what it is: ‘It doesn't matter here who you are or what you have,’ says Schwarz. It sounds like a bit of a cliché, but Winistörfer has a story to back it up:
                     </p>
+                    <div className='paragraph-spacer'></div>
                     <p className='main-story'>
                         ‘We once had two punks come in, with such incredible hairstyles. They sat at a table with two older men, I think they were former pilots. I went to sit with them and didn’t want to leave because I thought the discussions were going to escalate. But everything went well – so well that they finally shook hands and said, “Thanks a lot, until next time!”. They had agreed to meet again.’
                     </p>
@@ -145,12 +147,15 @@ export default class BodegaEspanola extends Component {
                     <p className='main-story'>
                         The mix of customers in the bodega is really something special. Winistörfer describes the Russians who come to eat with them and occasionally order food for their flight out of Zurich in their private jet, which the stewardesses come to pick up. Schwarz mentions the homeless man who is equally welcome and drops by every day to arrange the newspapers and receive a little something in return, and who sometimes gets a little extra from other regulars who know him.
                     </p>
+                    <div className='paragraph-spacer'></div>
                     <p className='main-story'>
                         Many celebrities also come regularly to the bodega, though Winistörfer doesn’t want to mention names: ‘I think they appreciate the fact that they’re treated normally here and their arrival doesn’t attract much attention.’ He’ll only give this much away: the bodega’s guests include national celebrities and international rock, sports and entertainment superstars – one of the latter can be found in the pictures. It’s typical of the bodega that in Schwarz’s book, like in Winistörfer’s conversation, they're only a footnote.
                     </p>
+                    <div className='paragraph-spacer'></div>
                     <p className='main-story'>
                         This is how Winistörfer sees it: whether Hollywood stars or amateur actors, the bodega provides a stage for all kinds of stories to play out. And why here? Besides the hospitality and openness, the most important reason may be that nothing here has changed. The broad outlines of the Bodega wine shop and restaurant’s more than 140-year history are easy to recite: founded by the Catalan family Gorgot in 1874, it was taken on by the Zurich family Winistörfer in the 50s. It was first run by the father, then the son. Neither of them changed the concept of hospitality and good, authentic Spanish food. Simple.
                     </p>
+                    <div className='paragraph-spacer'></div>
                     <p className='main-story'>
                         Of course, we can’t forget the scenery: the bodega provides an incredible backdrop. The interior has only been lightly renovated over the years; thanks to Eric Winistörfer’s father getting the building listed, they didn’t have to make any modifications that would have altered the character of the restaurant.
                     </p>

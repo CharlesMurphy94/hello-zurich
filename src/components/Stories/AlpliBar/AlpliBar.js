@@ -108,9 +108,11 @@ export default class AlpliBar extends Component {
                     <p className='main-story'>
                         The Älpli Bar itself, which Halter has run for more than 30 years, also looks like a blast from the past. On the first floor of this medieval house on Ankengasse, guests sit at massive wooden tables decorated with thousands of carvings. The wall is adorned with an alpine panorama showing the Tödi and the Sand Alp, while the bar proudly displays the names of prize-winning cows. The balcony offers the slogan: ‘Uf der Alp da gits kei Sünd. Zum Trinke het me immer Gründ’, or, roughly, ‘Up in the mountains, there are no sins. There is always a reason to drink.’
                     </p>
+                    <div className='paragraph-spacer'></div>
                     <p className='main-story'>
                         This traditional bar may hardly seem typical for Zurich at first glance, but for years it has attracted fans of Ländler folk music from all across Switzerland – and with good reason: The bar’s small gallery has bands playing 365 days a year. Alongside the expected music lovers, the audience is also full of nostalgic young people and curious tourists who hope to experience a bit of Swiss folklore.
                     </p>
+                    <div className='paragraph-spacer'></div>
                     <p className='main-story'>
                         You could argue that this is simply a carefully constructed setting, not a centuries-old custom; artificially introduced rather than home grown. And that’s true – and yet, Ländler has played an important role in the Niederdorf since the end of the 19th century. What's more, this area, far from any rural idyll, has always been a place where traditional Swiss music has been developed and popularised. Some even claim that Ländler was created in the heart of Zurich.
                     </p>
@@ -124,6 +126,7 @@ export default class AlpliBar extends Component {
                     <p className='main-story'>
                         Anyway – no matter how it got here, what’s important is that you can now sit down at one of these great tables and order Älpli milk, the bar’s signature drink. The recipe for this dangerously sweet drink, served in huge tankards, was a closely-held secret for many years. During our visit, however, Halter lets it slip: it’s made of an egg – fresh from the farm – white wine, brandy, and of course, sugar.
                     </p>
+                    <div className='paragraph-spacer'></div>
                     <p className='main-story'>
                         Anyone who needs to line their stomach to accompany this hearty drink can order a cold platter – which of course is accompanied by the classic Swiss seasonings Aromat and Maggi – or a fondue in winter.
                     </p>
@@ -133,6 +136,7 @@ export default class AlpliBar extends Component {
                     <p className='main-story'>
                         ‘I owe all the traditions to my guests,’ says Halter, ‘and to Aunt Klara!’ Her Aunt Klara ran the Älpli Bar in the sixties, when prostitutes still lived in the attic. ‘She was a real character who knew how exactly to deal with guests.’ Halter wanted to run things in the same way – and she succeeded. This is despite the many local changes since the sixties, not least the neighbours, who have become increasingly sensitive to noise. Halter doesn’t let it stop her, however.
                     </p>
+                    <div className='paragraph-spacer'></div>
                     <p className='main-story'>
                         And so the three-piece band starts up right on time, and as the tables slowly start to fill up, the general mood rises. We meet some young Zurich locals who wanted to experience something away from the bar scene in Kreis 4. And a different experience is exactly what they found; they later said that it was like stumbling into an entirely different world.
                     </p>

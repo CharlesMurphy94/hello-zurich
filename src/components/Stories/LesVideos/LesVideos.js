@@ -112,9 +112,11 @@ export default class LesVideos extends Component {
                 <p className='main-story'>
                 The proprietors manage a collection of around 32,000 films. No one knows the exact number, but it is certain that there is no bigger publicly accessible film archive in the city – possibly even in the entire country. Whether you’re a cinephile foraging for silent films from the 1920s, obscure science fiction, blaxploitation or nouvelle vague, you’re sure to find what you’re looking for at Les Videos. This might also be the reason why it’s the city’s only surviving video shop.
                 </p>
+                <div className='paragraph-spacer'></div>
                 <p className='main-story'>
                 This is not to say that changes brought about by digitalisation have left Les Videos completely unscathed, however. The top floor, which once housed the foreign film collection, has long since been leased to graphic designers, and the shop’s opening hours have been reduced. ‘Nobody comes to the shop looking for blockbusters anymore,’ says Willimann. Today’s viewers go online to watch Transformers or Minions.
                 </p>
+                <div className='paragraph-spacer'></div>
                 <p className='main-story'>
                 But Les Videos remains an important port of call for people with specific tastes, because, among other things, there is nowhere on the internet offering a comparable range. ‘Internet algorithms are increasingly leading to a commercialisation of our taste,’ says Willimann. The opposite can be said of Les Videos, where niche genres are meticulously cultivated. What the shop also offers that online streaming can’t is a staff of true film experts able to offer patrons insightful tips. Perusing the collection, you’re sure to stumble upon some true gems. It’s a place to strike up conversations with people.
                 </p>

@@ -22,7 +22,8 @@ export default class List extends Component {
                 // console.log(`this is the ${res.data}`)
                 
                 if(res.data[0]==='no favorites') {
-                    this.setState({stories:tempStories});
+                    this.setState({stories:tempStories,
+                    favorites: ['no favorites']});
                 } else{
                     let tempFavIds = res.data.map((e,i,a)=>{
                         return e.story_id;
@@ -59,6 +60,7 @@ export default class List extends Component {
                     story={e}
                     key={i}
                     favorited={e.favorited}
+                    favorites={this.state.favorites}
             />
         ))
     
