@@ -22,7 +22,7 @@ class ListItem extends Component{
     }
 
     componentDidMount(){
-        console.log(this.state)
+        // console.log(this.state)
     }
 
     // handleHover = (e)=>{

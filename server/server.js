@@ -75,6 +75,15 @@ const express = require('express'),
         })
     })
 
+    app.get('/stories/:id', (req,res)=>{
+        var db = req.app.get('db');
+        console.log(req.params.id)
+        db.getFilteredStories(req.params.id).then(stories=>{
+            console.log(stories)
+            res.status(200).send(stories)
+        })
+    })
+
     //------------FAVORITES-----------------//
     app.get('/favorites',(req,res)=>{
         var db = req.app.get('db');
