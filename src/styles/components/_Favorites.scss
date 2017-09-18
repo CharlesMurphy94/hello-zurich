@@ -1,4 +1,94 @@
 .favorites{
     position: relative;
     margin-top: 171px;
+    .no-user{
+        margin-top: -171px;
+        width: 100%;
+        height: calc(100vh - 92px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        z-index: 1;
+        .blur{
+            background-image: url('../img/favorites-blur.jpg');
+            background-size: cover;
+            filter: blur(10px);
+            overflow: hidden;
+            z-index: -1;
+            position: absolute;
+            width: 100%;
+            height: calc(100vh - 92px);
+
+        }
+        .heart-container{
+            z-index: 5;
+            .heart {
+                width: 100px;
+                height: 90px;
+                
+            }
+            .heart:before,
+            .heart:after {
+                position: absolute;
+                content: "";
+                left: calc(50%);
+                top: 75px;
+                width: 300px;
+                height: 450px;
+                background: white;
+                -moz-border-radius: 150px 150px 0 0;
+                border-radius: 150px 150px 0 0;
+                -webkit-transform: rotate(-45deg);
+                -moz-transform: rotate(-45deg);
+                    -ms-transform: rotate(-45deg);
+                    -o-transform: rotate(-45deg);
+                        transform: rotate(-45deg);
+                -webkit-transform-origin: 0 100%;
+                -moz-transform-origin: 0 100%;
+                    -ms-transform-origin: 0 100%;
+                    -o-transform-origin: 0 100%;
+                        transform-origin: 0 100%;
+            }
+            .heart:after {
+                left: calc(50% - 300px);
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    -o-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                -webkit-transform-origin: 100% 100%;
+                -moz-transform-origin: 100% 100%;
+                    -ms-transform-origin: 100% 100%;
+                    -o-transform-origin: 100% 100%;
+                        transform-origin :100% 100%;
+            }
+            .heart-text{
+                position: absolute;
+                padding-top: 200px;
+                margin-left: -100px;
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .fa{
+                    font-size: 26px;
+                    // line-height: 30px;
+                    color: $blue;
+                    margin-bottom: 30px;
+                }
+                p{
+                    z-index: 16;
+                    text-align: center;
+                    line-height: 30px;
+                }
+                a{
+                    margin-top: 30px;
+                    color: $blue;
+                }
+            }
+        }
+        
+    }
 }

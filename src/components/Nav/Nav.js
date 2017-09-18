@@ -7,19 +7,20 @@ export default class Nav extends Component{
     constructor(){
         super()
         this.state={
-            user: []
-
+            user: false
         }
         
     }
 
-    // componentDidMount(){
-    //     axios.get('http://localhost:3030/favorites').then(res=>{
-    //         if(res.data[0]!=='no favorites'){
-    //         this.setState({favorites: res.data})
-    //         }
-    //     })
-    // }
+    componentDidMount(){
+        axios.get('http://localhost:3030/favorites').then(res=>{
+            if(res.data[0]!=='no favorites'){
+            this.setState({user: true})
+            } else{
+                this.setState({user: false})
+            }
+        })
+    }
     
     render(){
         return (
@@ -45,12 +46,10 @@ export default class Nav extends Component{
                 </div>
 
                 <div className='nav-icons'>
-                    <a href={process.env.REACT_APP_LOGIN}>
-                        <p className='nav-login'>Log in</p>
+                    <a href={this.state.user ? process.env.REACT_APP_LOGOUT : process.env.REACT_APP_LOGIN}>
+                        <p className={this.state.user ? 'nav-logout' : 'nav-logout'}>{this.state.user === true ? 'Log out' : 'Log in'}</p>
                     </a>
-                    <a href={process.env.REACT_APP_LOGOUT}>
-                        <p className='nav-login'>Log Out</p>
-                    </a>
+                    
 
                 </div>
 

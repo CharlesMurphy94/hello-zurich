@@ -7,7 +7,8 @@ export default class List extends Component {
     constructor(){
         super()
         this.state={
-            favorites: []
+            favorites: [],
+            user: false,
 
         }
         this.updateFavorites = this.updateFavorites.bind(this);
@@ -16,7 +17,9 @@ export default class List extends Component {
     componentDidMount(){
         axios.get('http://localhost:3030/favorites').then(res=>{
             if(res.data[0]!=='no favorites'){
-            this.setState({favorites: res.data})
+            this.setState({favorites: res.data, user: true})
+            } else{
+                this.setState({user: false})
             }
         })
     }
@@ -45,9 +48,22 @@ export default class List extends Component {
     
         return (
             <div className='favorites'>
-
                 <div className='story-grid'>
                     {favorites}
+                </div>
+                <div className={this.state.user ? null :'no-user'}>
+                    <div className={this.state.user ? null :'blur'}/>
+                    <div className={this.state.user ? null : 'heart-container'}>
+                        <div className='heart'>
+                        </div>
+                        <div className='heart-text'>
+                            <i className='fa fa-heart' />
+                            <p>Please log in to keep track of you favorite stories!</p>
+                            <a href={process.env.REACT_APP_LOGIN}>
+                                <p className={'nav-login'}>Log in</p>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         );
