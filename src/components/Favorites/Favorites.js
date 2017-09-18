@@ -51,16 +51,16 @@ export default class List extends Component {
                 <div className='story-grid'>
                     {favorites}
                 </div>
-                <div className={this.state.user ? null :'no-user'}>
-                    <div className={this.state.user ? null :'blur'}/>
-                    <div className={this.state.user ? null : 'heart-container'}>
-                        <div className='heart'>
+                <div className={this.state.user ? 'hide' :'no-user'}>
+                    <div className={this.state.user ? 'hide' :'blur'}/>
+                    <div className={this.state.user ? 'hide' : 'heart-container'}>
+                        <div className={this.state.user ? 'hide' : 'heart'}>
                         </div>
-                        <div className='heart-text'>
-                            <i className='fa fa-heart' />
+                        <div className={this.state.user ? 'hide' : 'heart-text'}>
+                            <i className={this.state.user ? 'hide' : 'fa fa-heart'}/>
                             <p>Please log in to keep track of you favorite stories!</p>
                             <a href={process.env.REACT_APP_LOGIN}>
-                                <p className={'nav-login'}>Log in</p>
+                                <p className={this.state.user ? 'hide' : 'nav-login'}>Log in</p>
                             </a>
                         </div>
                     </div>

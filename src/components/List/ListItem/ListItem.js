@@ -7,13 +7,13 @@ class ListItem extends Component{
     constructor(props){
         super(props)
         this.state = {
-        story: this.props.story,
-        storyName: this.props.story.name,
-        storyBlurb: this.props.story.blurb,
-        storyId: this.props.story_id,
-        favorites: this.props.favorites,
+        story: null,
+        storyName: '',
+        storyBlurb: null,
+        storyId: null,
+        favorites: null,
         favoriteIcon:'',
-        favorited:this.props.favorited
+        favorited:null
         }
         this.storyNameParser = this.storyNameParser.bind(this);
         this.toggleFavorite = this.toggleFavorite.bind(this);
@@ -23,6 +23,16 @@ class ListItem extends Component{
 
     componentDidMount(){
         // console.log(this.state)
+    }
+    componentWillMount(){
+        console.log(this.props)
+        this.setState({story: this.props.story,
+            storyName: this.props.story.name,
+            storyBlurb: this.props.story.blurb,
+            storyId: this.props.story_id,
+            favorites: this.props.favorites,
+            favoriteIcon:'',
+            favorited:this.props.favorited})
     }
 
     // handleHover = (e)=>{
@@ -69,7 +79,7 @@ class ListItem extends Component{
                     <i className={this.state.favorited?'fa fa-heart':'fa fa-heart-o'} onClick={this.toggleFavorite}></i>
                 </div>
                 <Link to={`/story/${this.storyNameParser(this.state.storyName)}`}>
-                    <div className='list-item' onHover={this.shrinkHeart}>
+                    <div className='list-item' >
                         {/* <img className="preview-pic" src={`../../../img/previewPics/${this.storyNameParser(this.state.storyName)}.jpg`}>
                         </img> */}
                         <div className={this.storyNameParser(this.state.storyName)}>

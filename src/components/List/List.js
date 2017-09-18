@@ -67,27 +67,29 @@ export default class List extends Component {
         if(filter!=='All Stories'){
             this.setState({filtered: true})
             axios.get(`http://localhost:3030/stories/${filter}`).then(res=>{
-                // let tempStories = res.data;
-                this.setState({stories: res.data});    
-            // this.setState({stories: res.data})
-                // axios.get('http://localhost:3030/favorites').then(res=>{
-                //     // console.log(`this is the ${res.data}`)
+                let tempStories = res.data;
+                // this.setState({stories: res.data});    
+            this.setState({stories: res.data})
+                axios.get('http://localhost:3030/favorites').then(res=>{
                     
-                //     if(res.data[0]==='no favorites') {
-                //         this.setState({stories:tempStories,
-                //         favorites: ['no favorites']});
-                //     } else{
-                //         let tempFavIds = res.data.map((e,i,a)=>{
-                //             return e.story_id;
-                //         });
-                //         // this.setState({favorites:res.data})
-                //         for(let i=0;i<tempStories.length;i++){
-                //             tempStories[i].favorited = tempFavIds.includes(tempStories[i].id)
-                //         }
-                //         this.setState({stories:tempStories});
-                //     }
-                // })
+                    
+                    if(res.data[0]==='no favorites') {
+                        this.setState({stories:tempStories,
+                        favorites: ['no favorites']});
+                    } else{
+                        let tempFavIds = res.data.map((e,i,a)=>{
+                            return e.story_id;
+                        });
+                        // this.setState({favorites:res.data})
+                        for(let i=0;i<tempStories.length;i++){
+                            tempStories[i].favorited = tempFavIds.includes(tempStories[i].id)
+                        }
+                        this.setState({stories:tempStories});
+                    }
+                })
+                console.log(this.state.stories)
             })
+            
             this.setState({showFilter:false})
         } else this.setState({showFilter:false, filtered: true})
     }

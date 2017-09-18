@@ -9,7 +9,7 @@ const express = require('express'),
     massive = require('massive'),
     app = express();
 
-    app.use( express.static( `${__dirname}/../build` ) );
+    app.use( express.static(`${__dirname}/../build`) );
 
     
 

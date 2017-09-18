@@ -1,6 +1,18 @@
 .favorites{
     position: relative;
     margin-top: 171px;
+    .story-grid{
+        position: relative;
+        margin-top: 221px;
+        width: 100%;
+        display: flex;
+        padding-top: 42px;
+        padding-right:12px;
+        padding-left:12px;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
     .no-user{
         margin-top: -171px;
         width: 100%;
@@ -90,5 +102,10 @@
             }
         }
         
+    }
+    .hide{
+        height: 0px;
+        width: 0px;
+        color: transparent;
     }
 }
