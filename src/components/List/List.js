@@ -94,6 +94,15 @@ export default class List extends Component {
         } else this.setState({showFilter:false, filtered: true})
     }
     render(){
+        let filters = this.state.filters.map((e,i,a)=>{
+            let key=i;
+            return(
+                <div className='filter-option' onClick={()=>(this.filterResults(e))}>
+                    <p>{e}</p>
+                </div>
+            )
+        })
+        
         let stories = this.state.stories.map((e,i,a)=>(
            <ListItem  story_id={e.id} 
                     story={e}
@@ -103,14 +112,7 @@ export default class List extends Component {
             />
         ))
 
-        let filters = this.state.filters.map((e,i,a)=>{
-            let key=i;
-            return(
-                <div className='filter-option' onClick={()=>(this.filterResults(e))}>
-                    <p>{e}</p>
-                </div>
-            )
-        })
+        
     
     
         return (

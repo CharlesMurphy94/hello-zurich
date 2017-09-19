@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+// import MapContainer from './PuntoMap.js';
 export default class PuntoItaliano extends Component {
     constructor(){
         super()
@@ -145,6 +146,21 @@ export default class PuntoItaliano extends Component {
                             But he’s been in the city a long time – too long to be easily scared off by the big supermarket chains. There is too much tradition, history and emotion in his small shop (which has been going for 21 years!), where you can also buy wine or limoncello, or stylishly packaged Italian pasta. ‘That’s all just there for decoration! People only want my paninis,’ laughs Vincenzo. As a farewell, he offers me an espresso (brand: Caffè Giusto, imported from Campania). I can’t remember when I last had such a solid caffeine high. And it’s available for CHF 3 along with Vincenzo’s stories – a man who has lived enough to fill two lives.
                             </p>
                         </div>
+                    </div>
+                </div>
+                {/* <MapContainer /> */}
+                <div className='address-hours'>
+                    <div className='address'>
+                        <h1>Address</h1>
+                        <p> Punto Italiano 
+                            Spitalgasse 9
+                            8001 Zürich
+                        </p>
+                    </div>
+                    <div className='hours'>
+                        <h1>Opening Times</h1>
+                        <p> Monday to Saturday, 7 am – 6 pm
+                        </p>
                     </div>
                 </div>
             </div>

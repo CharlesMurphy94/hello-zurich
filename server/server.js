@@ -4,12 +4,13 @@ const express = require('express'),
     bodyParser = require('body-parser'),
     cors = require('cors'),
     passport = require('passport'),
-    Auth0Strategy = require('passport-Auth0'),
+    Auth0Strategy = require('passport-auth0'),
     session = require('express-session'),
     massive = require('massive'),
     app = express();
-
-    app.use( express.static(`${__dirname}/../build`) );
+    path = require('path'),
+    app.use( express.static(path.resolve(__dirname,'..','build')));
+    // app.use( express.static(`${__dirname}/../build`) );
 
     
 
@@ -134,8 +135,8 @@ const express = require('express'),
     app.get('/auth', passport.authenticate('auth0'));
 
     app.get('/auth/callback', passport.authenticate('auth0', {
-        successRedirect: 'http://localhost:3000/',
-        failureRedirect: 'http://localhost:3000/'
+        successRedirect: '/',
+        failureRedirect: '/'
     }))
       
     passport.serializeUser(function(user, done) {
@@ -160,16 +161,16 @@ const express = require('express'),
         req.logOut();
         activeUser=null;
         console.log(activeUser)
-        return res.redirect(302, 'http://localhost:3000/');
+        return res.redirect(302, '/');
     })
 
     //------------- END AUTH0 --------------//
 
 
-    const path = require('path')
-    app.get('*', (req, res)=>{
-      res.sendFile(path.join(__dirname, '..','build','index.html'));
-    })
+    // const path = require('path')
+    // app.get('*', (req, res)=>{
+    //   res.sendFile(path.join(__dirname, '..','build','index.html'));
+    // })
     
     const port = 3030;
 

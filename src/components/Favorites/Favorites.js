@@ -31,7 +31,7 @@ export default class List extends Component {
                 this.setState({favorites: res.data})
             }
             
-            window.location.reload();
+            // window.location.reload();
 
         })
     }

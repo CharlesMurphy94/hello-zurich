@@ -36,8 +36,11 @@
         }
     }
     .filter-container{
+        position: fixed;
+        z-index: 1;
+        top: 221px;
         width: 100%;
-        margin-top: 221px;
+        // margin-top: 221px;
         margin-bottom: -221px;
         height: 300px;
         background: $blue;

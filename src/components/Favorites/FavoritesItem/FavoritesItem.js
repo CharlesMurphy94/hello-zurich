@@ -47,15 +47,15 @@ class ListItem extends Component{
                 <div className='favorite-icon'>
                     <i className={`fa fa-times`} onClick={this.deleteFavorite}></i>
                 </div>
-                <Link to={`/story/${this.storyNameParser(this.state.storyName)}`}>
+                <Link to={`/story/${this.storyNameParser(this.props.story.name)}`}>
                     <div className='list-item'>
                         {/* <img className="preview-pic" src={`../../../img/previewPics/${this.storyNameParser(this.state.storyName)}.jpg`}>
                         </img> */}
-                        <div className={this.storyNameParser(this.state.storyName)}>
+                        <div className={this.storyNameParser(this.props.story.name)}>
                         </div>
                         <div className='list-item-body'>
-                            <h1>{this.state.storyName}</h1>  
-                            <p>{this.state.storyBlurb}</p>
+                            <h1>{this.props.story.name}</h1>  
+                            <p>{this.props.story.blurb}</p>
                         </div>
                         
                     </div>
