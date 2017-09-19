@@ -4,11 +4,12 @@ const express = require('express'),
     bodyParser = require('body-parser'),
     cors = require('cors'),
     passport = require('passport'),
-    Auth0Strategy = require('passport-Auth0'),
+    Auth0Strategy = require('passport-auth0'),
     session = require('express-session'),
     massive = require('massive'),
+    path = require('path'),
     app = express();
-
+    app.use( express.static(path.resolve(__dirname,'..','build')));
     app.use(bodyParser.json());
     app.use(cors());
     app.use(session({
