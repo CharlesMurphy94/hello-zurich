@@ -1,22 +1,22 @@
 .favorites{
     position: relative;
-    margin-top: 171px;
+    margin-top: 136.8px;
     .story-grid{
         position: relative;
         margin-top: 221px;
         width: 100%;
         display: flex;
-        padding-top: 42px;
-        padding-right:12px;
-        padding-left:12px;
+        padding-top: 33.6px;
+        padding-right:9.6px;
+        padding-left:9.6px;
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
     }
     .no-user{
-        margin-top: -171px;
+        margin-top: -136.8px;
         width: 100%;
-        height: calc(100vh - 92px);
+        height: calc(100vh - 73.6px);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -36,8 +36,8 @@
         .heart-container{
             z-index: 5;
             .heart {
-                width: 100px;
-                height: 90px;
+                width: 80px;
+                height: 72px;
                 
             }
             .heart:before,
@@ -45,12 +45,12 @@
                 position: absolute;
                 content: "";
                 left: calc(50%);
-                top: 75px;
-                width: 300px;
-                height: 450px;
+                top: 60px;
+                width: 240px;
+                height: 360px;
                 background: white;
-                -moz-border-radius: 150px 150px 0 0;
-                border-radius: 150px 150px 0 0;
+                -moz-border-radius: 120px 120px 0 0;
+                border-radius: 120px 120px 0 0;
                 -webkit-transform: rotate(-45deg);
                 -moz-transform: rotate(-45deg);
                     -ms-transform: rotate(-45deg);
@@ -63,7 +63,7 @@
                         transform-origin: 0 100%;
             }
             .heart:after {
-                left: calc(50% - 300px);
+                left: calc(50% - 240px);
                 -webkit-transform: rotate(45deg);
                 -moz-transform: rotate(45deg);
                     -ms-transform: rotate(45deg);
@@ -77,26 +77,26 @@
             }
             .heart-text{
                 position: absolute;
-                padding-top: 200px;
-                margin-left: -100px;
-                width: 300px;
+                padding-top: 160px;
+                margin-left: -80px;
+                width: 240px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 .fa{
-                    font-size: 26px;
+                    font-size: 20.8px;
                     // line-height: 30px;
                     color: $blue;
-                    margin-bottom: 30px;
+                    margin-bottom: 24px;
                 }
                 p{
-                    z-index: 16;
+                    z-index: 12;
                     text-align: center;
-                    line-height: 30px;
+                    line-height: px;
                 }
                 a{
-                    margin-top: 30px;
+                    margin-top: 24px;
                     color: $blue;
                 }
             }
