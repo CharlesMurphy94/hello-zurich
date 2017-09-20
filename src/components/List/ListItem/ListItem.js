@@ -63,11 +63,11 @@ class ListItem extends Component{
             alert('Please log in to add stories to your favorites')
         }
         if (this.state.favorited===false){
-            axios.post(`http://localhost:3030/addFavorites/${this.state.storyId}`).then(res=>{
+            axios.post(`/addFavorites/${this.state.storyId}`).then(res=>{
                 this.setState({favorited: true})
             })
         } else{
-            axios.delete(`http://localhost:3030/deleteFavorites/${this.state.storyId}`).then(res=>{
+            axios.delete(`/deleteFavorites/${this.state.storyId}`).then(res=>{
                 this.setState({favorited: false})
             })
         };

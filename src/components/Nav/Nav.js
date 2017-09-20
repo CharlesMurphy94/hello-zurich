@@ -13,7 +13,7 @@ export default class Nav extends Component{
     }
 
     componentDidMount(){
-        axios.get('http://localhost:3030/favorites').then(res=>{
+        axios.get('/favorites').then(res=>{
             if(res.data[0]!=='no favorites'){
             this.setState({user: true})
             } else{

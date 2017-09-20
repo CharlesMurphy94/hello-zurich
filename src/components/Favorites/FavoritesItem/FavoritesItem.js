@@ -32,7 +32,7 @@ class ListItem extends Component{
 
 
     deleteFavorite = (a)=>{
-        axios.delete(`http://localhost:3030/deleteFavorites/${this.state.storyId}`).then(res=>{
+        axios.delete(`/deleteFavorites/${this.state.storyId}`).then(res=>{
             
             // this.setState({favorited: false});
             // this.setState({filler: true})

@@ -13,7 +13,7 @@ export class MapContainer extends Component {
     
 }
   componentDidMount(){
-    axios.get('http://localhost:3030/coordinates').then(res=>{
+    axios.get('/coordinates').then(res=>{
       console.log(res.data)
       let tempCoordinates = [];
       res.data.map((e,i,a)=>{

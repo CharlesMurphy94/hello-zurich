@@ -21,10 +21,10 @@ export default class List extends Component {
 
     componentWillMount(){
         if (this.state.filtered === false){
-            axios.get('http://localhost:3030/stories').then(res=>{
+            axios.get('/stories').then(res=>{
                 let tempStories = res.data;    
             // this.setState({stories: res.data})
-                axios.get('http://localhost:3030/favorites').then(res=>{
+                axios.get('/favorites').then(res=>{
                     // console.log(`this is the ${res.data}`)
                     
                     if(res.data[0]==='no favorites') {
@@ -66,11 +66,11 @@ export default class List extends Component {
     filterResults = (filter) => {
         if(filter!=='All Stories'){
             this.setState({filtered: true})
-            axios.get(`http://localhost:3030/stories/${filter}`).then(res=>{
+            axios.get(`/stories/${filter}`).then(res=>{
                 let tempStories = res.data;
                 // this.setState({stories: res.data});    
             this.setState({stories: res.data})
-                axios.get('http://localhost:3030/favorites').then(res=>{
+                axios.get('/favorites').then(res=>{
                     
                     
                     if(res.data[0]==='no favorites') {

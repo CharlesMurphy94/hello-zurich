@@ -11,15 +11,6 @@ export default class LesVideos extends Component {
     
     }
 
-    // componentDidMount(){
-    //     axios.get('http://localhost:3030/featured').then(res=>{
-    //         this.setState({featuredStories: res.data})   
-    //         console.log(res.data)
-    //     })
-        
-
-    // }
-
     handleLeft = (change) => {
         if(this.state.activePic > 0) {
             console.log('minus')
