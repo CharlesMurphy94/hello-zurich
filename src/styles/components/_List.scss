@@ -5,8 +5,8 @@
         position: fixed;
         z-index: 1;
         top: 171px;
-        // margin-top: 171px;
-        height: 50px;
+        // margin-top: 136.8px;
+        height: 40px;
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -22,15 +22,15 @@
                 list-style-type: none;
                 text-align: center;
                 color: white;
-                margin: 0px 20px 0px 20px;
+                margin: 0px 16px 0px 20px;
             
             }
         }
         .filter-button{
             position: absolute;
-            line-height: 30px;
-            right: 80px;
-            top: 10px;
+            line-height: 24px;
+            right: 64px;
+            top: 8px;
             color: white;
             cursor: pointer;
         }
@@ -38,13 +38,13 @@
     .filter-container{
         position: fixed;
         z-index: 1;
-        top: 221px;
+        top: 176.8;
         width: 100%;
-        // margin-top: 221px;
-        margin-bottom: -221px;
-        height: 300px;
+        // margin-top: 176.8;
+        margin-bottom: -176.8;
+        height: 240px;
         background: $blue;
-        padding: 60px;
+        padding: 48px;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -63,9 +63,9 @@
             flex-direction: column;
             flex-wrap: wrap;
             .filter-option{
-                height: 60px;
+                height: 48px;
                 width: 45%;
-                padding-top: 15px;
+                padding-top: 12px;
                 // background-color: red;
                 border-width: 1px 0px 0px 0px;
                 border-style: solid;
@@ -73,7 +73,7 @@
                 cursor: pointer;
                 p{
                     color: white;
-                    line-height: 30px;
+                    line-height: 24px;
                 }
             }
         }
@@ -86,7 +86,7 @@
     }
     .story-grid{
         position: relative;
-        margin-top: 221px;
+        margin-top: 176.8;
         width: 100%;
         display: flex;
         padding-top: 42px;
