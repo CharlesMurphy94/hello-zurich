@@ -167,10 +167,10 @@ const express = require('express'),
     //------------- END AUTH0 --------------//
 
 
-    const path = require('path')
-    app.get('*', (req, res)=>{
-      res.sendFile(path.join(__dirname, '..','build','index.html'));
-    })
+    // const path = require('path')
+    // app.get('*', (req, res)=>{
+    //   res.sendFile(path.join(__dirname, '..','build','index.html'));
+    // })
     
     const port = 3030;
 
