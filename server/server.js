@@ -9,8 +9,8 @@ const express = require('express'),
     massive = require('massive'),
     app = express();
     path = require('path'),
-    // app.use( express.static(path.resolve(__dirname,'..','build')));
-    app.use( express.static(`${__dirname}/../build`) );
+    app.use( express.static(path.resolve(__dirname,'..','build')));
+    // app.use( express.static(`${__dirname}/../build`) );
 
     
 
@@ -167,10 +167,10 @@ const express = require('express'),
     //------------- END AUTH0 --------------//
 
 
-    // const path = require('path')
-    // app.get('*', (req, res)=>{
-    //   res.sendFile(path.join(__dirname, '..','build','index.html'));
-    // })
+    const path = require('path')
+    app.get('*', (req, res)=>{
+      res.sendFile(path.join(__dirname, '..','build','index.html'));
+    })
     
     const port = 3030;
 
