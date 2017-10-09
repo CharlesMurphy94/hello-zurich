@@ -94,9 +94,11 @@ export default class Landing extends Component {
                                 </div>
                             </div>
                         </Link>    
-                        <div className='left-arrow' value='--' onClick={this.handleLeft}>
+                        <div className='slide-left'value='--' onClick={this.handleLeft}>
+                            <div className='left-arrow' ></div>
                         </div>
-                        <div className='right-arrow' value='++' onClick={this.handleRight}>
+                        <div className='slide-right'value='--' onClick={this.handleRight}>
+                            <div className='right-arrow' ></div>
                         </div>
                         
                         <div className='slider-dot-container'>

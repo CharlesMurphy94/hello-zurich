@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 import axios from 'axios';
+require('dotenv').config();
 
 // ... 
 
@@ -33,7 +34,7 @@ export class MapContainer extends Component {
         
         return (
           <div className='map-container'>
-            <Map google={this.props.google} zoom={15} initialCenter={{lat: 47.3737,lng: 8.5421658}} className='map-container'>
+            <Map google={this.props.google} key = {process.env.GAPI_KEY} zoom={15} initialCenter={{lat: 47.3737,lng: 8.5421658}} className='map-container'>
                 
               <Marker
                       title={'The marker`s title will appear as a tooltip.'}
@@ -78,13 +79,8 @@ export class MapContainer extends Component {
               <Marker
                       title={'The marker`s title will appear as a tooltip.'}
                       name={'SOMA'}
-                      position={this.state.coordinates[8]}         
-              />
-              {/* <Marker
-                      title={'The marker`s title will appear as a tooltip.'}
-                      name={'SOMA'}
-                      position={this.state.coordinates[9]}         
-              /> */}
+                      position={this.state.coordinates[8]}              
+              />  
               <Marker
                       title={'The marker`s title will appear as a tooltip.'}
                       name={'SOMA'}
@@ -99,5 +95,5 @@ export class MapContainer extends Component {
 }
 
 export default GoogleApiWrapper({
- apiKey: process.env.GOOGLE_KEY
+ apiKey: process.env.GAPI_KEY
 })(MapContainer)

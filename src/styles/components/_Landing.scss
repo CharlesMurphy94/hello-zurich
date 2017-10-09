@@ -126,34 +126,48 @@
                 
                 
             }
-
-            .left-arrow{
+            .slide-left{
                 position: absolute;
+                width: 80px;
+                height: 800px;
                 left: 2%;
-                top: 624px;
-
-                width: 64px;
-                height: 12px;
-                background-size: cover;
-                background-image: url('../img/slider-arrow.svg');
-                z-index: 8;
-                -webkit-transform:rotate(-10deg);
-                -moz-transform:rotate(180deg);
-                 -ms-transform:rotate(180deg);
-                  -o-transform:rotate(180deg);
-                     transform:rotate(180deg); 
-                // position: absolute;
+                top: 290px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                .left-arrow{
+                    width: 80px;
+                    height: 15px;
+                    background-size: cover;
+                    background-image: url('../img/slider-arrow.svg');
+                    z-index: 8;
+                    -webkit-transform:rotate(-10deg);
+                    -moz-transform:rotate(180deg);
+                     -ms-transform:rotate(180deg);
+                      -o-transform:rotate(180deg);
+                         transform:rotate(180deg); 
+                    // position: absolute;
+                }
             }
-            .right-arrow{
+            .slide-right{
                 position: absolute;
+                height: 800px;
+                width: 80px;
                 right: 2%;
-                top: 624px;
-
-                width: 64px;
-                height: 12px;
-                background-size: cover;
-                background-image: url('../img/slider-arrow.svg');
-                // position: absolute;
+                top: 290px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                .right-arrow{
+                    width: 80px;
+                    height: 15px;
+                    background-size: cover;
+                    background-image: url('../img/slider-arrow.svg');
+                    z-index: 8;
+                    
+                }
             }
             .slider-dot-container{
                 width: 100%;

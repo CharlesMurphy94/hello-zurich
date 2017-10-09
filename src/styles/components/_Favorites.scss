@@ -16,7 +16,7 @@
     .no-user{
         margin-top: -136.8px;
         width: 100%;
-        height: calc(100vh - 73.6px);
+        height: calc(100vh - 102px);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -24,13 +24,13 @@
         z-index: 1;
         .blur{
             background-image: url('../img/favorites-blur.jpg');
-            background-size: cover;
+            background-size: 100% calc(100vh - 102px);
             filter: blur(10px);
             overflow: hidden;
             z-index: -1;
             position: absolute;
             width: 100%;
-            height: calc(100vh - 92px);
+            height: calc(100vh - 102px);
 
         }
         .heart-container{
@@ -45,7 +45,7 @@
                 position: absolute;
                 content: "";
                 left: calc(50%);
-                top: 60px;
+                top: 48px;
                 width: 240px;
                 height: 360px;
                 background: white;

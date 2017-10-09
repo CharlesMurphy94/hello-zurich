@@ -89,6 +89,7 @@ const express = require('express'),
     app.get('/favorites',(req,res)=>{
         var db = req.app.get('db');
         if(activeUser){
+            console.log(activeUser)
             db.getFavorites(activeUser.id).then(favorites=>{
                 res.status(200).send(favorites)
             })

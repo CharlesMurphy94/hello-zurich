@@ -1,7 +1,7 @@
 .blueme-under-de-boge{
     .story-nav{
         width: 100%;
-        height: 210px;
+        height: 152px;
     }
     .story-slider{
         
@@ -15,49 +15,49 @@
             // background-image:url('./../img/previewPics/alpli-bar.jpg');
             .bluemeunderdeboge0{
                 width: 100%;
-                height:800px;
+                height:640px;
                 background-size: cover;
                 background-image: url('./../img/BluemeUnderDeBoge/bluemeunderdeboge-1.jpg');
             }
             .bluemeunderdeboge1{
                 width: 100%;
-                height:800px;
+                height:640px;
                 background-size: cover;
                 background-image: url('./../img/BluemeUnderDeBoge/bluemeunderdeboge-2.jpg');
             }
             .bluemeunderdeboge2{
                 width: 100%;
-                height:800px;
+                height:640px;
                 background-size: cover;
                 background-image: url('./../img/BluemeUnderDeBoge/bluemeunderdeboge-3.jpg');
             }
             .bluemeunderdeboge3{
                 width: 100%;
-                height:800px;
+                height:640px;
                 background-size: cover;
                 background-image: url('./../img/BluemeUnderDeBoge/bluemeunderdeboge-4.jpg');
             }
             .bluemeunderdeboge4{
                 width: 100%;
-                height:800px;
+                height:640px;
                 background-size: cover;
                 background-image: url('./../img/BluemeUnderDeBoge/bluemeunderdeboge-5.jpg');
             }
             .bluemeunderdeboge5{
                 width: 100%;
-                height:800px;
+                height:640px;
                 background-size: cover;
                 background-image: url('./../img/BluemeUnderDeBoge/bluemeunderdeboge-6.jpg');
             }
             .bluemeunderdeboge6{
                 width: 100%;
-                height:800px;
+                height:640px;
                 background-size: cover;
                 background-image: url('./../img/BluemeUnderDeBoge/bluemeunderdeboge-7.jpg');
             }
             .bluemeunderdeboge7{
                 width: 100%;
-                height:800px;
+                height:640px;
                 background-size: cover;
                 background-image: url('./../img/BluemeUnderDeBoge/bluemeunderdeboge-8.jpg');
             }
@@ -65,17 +65,17 @@
 
         .slide-left{
             position: absolute;
-            width: 80px;
-            height: 800px;
-            left: 2%;
-            top: 290px;
+            width: 60px;
+            height: 640px;
+            left: 1.5%;
+            top: 235px;
             display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
             .left-arrow{
-                width: 80px;
-                height: 15px;
+                width: 60px;
+                height: 10px;
                 background-size: cover;
                 background-image: url('../img/slider-arrow.svg');
                 z-index: 8;
@@ -89,17 +89,17 @@
         }
         .slide-right{
             position: absolute;
-            height: 800px;
-            width: 80px;
-            right: 2%;
-            top: 290px;
+            height: 640px;
+            width: 60px;
+            right: 1.5%;
+            top: 235px;
             display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
             .right-arrow{
-                width: 80px;
-                height: 15px;
+                width: 60px;
+                height: 10px;
                 background-size: cover;
                 background-image: url('../img/slider-arrow.svg');
                 z-index: 8;
@@ -108,17 +108,17 @@
         }
         .slider-dot-container{
             width: 100%;
-            height: 20px;
+            height: 15px;
             padding-right: 3.75%;
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
 
             .slider-dots{
-                width: 220px;
+                width: 190px;
                 padding-left: 10px;
                 padding-right: 0px;
-                height: 30px;
+                height: 25px;
                 position: relative;
                 right: 0px;
                 top:0px;
@@ -131,24 +131,24 @@
                 .black-dot{
                     cursor: pointer;
                     background-color: black;
-                    width: 6px;
-                    height: 6px;
+                    width: 5px;
+                    height: 5px;
                     border-radius: 50%;
                     &:first-child{
                         cursor: pointer;
-                        width: 6px;
-                        height: 6px;
+                        width: 5px;
+                        height: 5px;
                         border-radius: 50%;
                     }
                 }
                 .blue-dot{
                     background-color: $blue;
-                    width: 6px;
-                    height: 6px;
+                    width: 5px;
+                    height: 5px;
                     border-radius: 50%;
                     &:first-child{
-                        width: 6px;
-                        height: 6px;
+                        width: 5px;
+                        height: 5px;
                         border-radius: 50%;
                     }
                 }
@@ -158,42 +158,42 @@
     }
     .story-body{
         width: 100%;
-        padding-top: 595px;
+        padding-top: 395px;
         color: black;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
         .page-header{
-            width: 1180px;
+            width: 944px;
             // margin: 0px 180px 0px 180px;
             .header-title{
                 font-family: 'Playfair Display';
-                font-size: 50px;
+                font-size: 40px;
             }
             .header-blurb{
-                margin-top:15px;
+                margin-top:12px;
             }
             
         }
         .credit{
-            width: 1180px;
-            margin-top: 72px;
+            width: 944px;
+            margin-top: 58px;
         }
         .intro{
-            width: 1180px;
-            margin-top: 15px;
-            font-size: 27px;
-            line-height: 40px;
+            width: 944px;
+            margin-top: 12px;
+            font-size: 21.6px;
+            line-height: 32px;
         }
         .toMap{
-            width: 1180px;
+            width: 944px;
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
             align-items: center;
-            margin-top: 70px;
-            margin-bottom: 50px;
+            margin-top: 60px;
+            margin-bottom: 40px;
             color: $blue;
             .fa{
                 font-size: 40px;
@@ -201,47 +201,47 @@
             }
         }
         .main-story{
-            width: 940px;
-            margin-top: 85px;
-            margin-bottom: 85px;
-            line-height:33px;
+            width: 752px;
+            margin-top: 65px;
+            margin-bottom: 65px;
+            line-height:26.4px;
         }
         .image-center-container{
             width: 100%;
-            height: 885px;
-            margin: 85px 0px 85px 0px;
+            height: 630px;
+            margin: 65px 0px 65px 0px;
             display: flex;
             justify-content: center;
             align-items: center;
             .image{
-                width: 1180px;
-                height: 885px;
+                width: 950px;
+                height: 630px;
             }
         }
         .image-double-container{
             width: 100%;
-            height: 920px;
+            height: 827px;
             display: flex;
-            margin: 85px 0px 85px 0px;
+            margin: 65px 0px 65px 0px;
             justify-content: center;
             align-items: flex-start;
             .image{
-                width: 690px;
-                height: 920px;
-                margin: 0px 18px 0px 18px;
+                width: 552px;
+                height: 827px;
+                margin: 0px 14.4px 0px 14.4px;
             }
         }
         .image-double-container-ls{
             width: 100%;
-            height: 460px;
+            height: 300px;
             display: flex;
-            margin: 85px 0px 85px 0px;
+            margin: 65px 0px 65px 0px;
             justify-content: center;
             align-items: flex-start;
             .image{
-                width: 690px;
-                height: 460px;
-                margin: 0px 18px 0px 18px;
+                width: 558px;
+                height: 372px;
+                margin: 0px 14.5px 0px 14.5px;
             }
         }
         .img-1{
@@ -270,66 +270,66 @@
         }
         
         .image-caption{
-            width: 690px;
-            margin-top: -65px;
+            width: 552px;
+            margin-top: -55px;
             margin-bottom: 85px;
-            padding: 0px 20px 0px 20px;
+            padding: 0px 16px 0px 16px;
             p{
                 font-family:'Playfair Display';
                 font-weight: 300;
-                font-size: 21px;
-                line-height: 30px;
+                font-size: 17px;
+                line-height: 24px;
             }
         }
         .subheader{
-            width: 940px;
-            font-size: 32px;
-            margin-top: 170px;
-            margin-bottom: -70px;
+            width: 752px;
+            font-size: 25.6px;
+            margin-top: 65px;
+            margin-bottom: -56px;
         }
         .block-quote{
-            width: 940px;
-            margin-top: 85px;
-            margin-bottom: 85px;
+            width: 752px;
+            margin-top: 68px;
+            margin-bottom: 68px;
             .quote{
                 font-family: 'Playfair Display';
-                font-size: 50px;
-                line-height: 62px;
+                font-size: 40px;
+                line-height: 50px;
             }
             .horizontal-line{
-                margin: 25px 0px 35px 0px;
+                margin: 20px 0px 28px 0px;
                 width: 100%;
-                height: 3px;
+                height: 2px;
                 background-color: black;
             }
         }
         .overlap{
             width: 100%;
-            height: 900px;
+            height: 840px;
             padding: 0px 80px 0px 80px;
-            margin: 85px 0px 85px 0px;
+            margin: 47px 0px 47px 0px;
             position: relative;
             .image-overlap{
                 position: absolute;
-                left: 77px;
-                width: 695px;
-                height: 900px;
+                left: 47px;
+                width: 558px;
+                height: 840px;
 
             }
             .text-overlap{
                 position: absolute;
-                padding: 160px 144px 144px 144px;
-                right: 77px;
-                top: 107px;
-                width: 854px;
-                height: 686px;
+                padding: 160px 120px 144px 120px;
+                right: 47px;
+                top: 160px;
+                width: 687px;
+                height: 520px;
                 z-index: 2;
                 background: white;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 p{
-                    line-height: 33px;
+                    line-height: 27px;
                     
                 }
             }
