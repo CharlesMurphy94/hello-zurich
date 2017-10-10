@@ -167,6 +167,9 @@ const express = require('express'),
 
     //------------- END AUTH0 --------------//
 
+    app.get('/*', (req, res) => {
+        res.sendFile(path.resolve(__dirname, '..', 'build', 'index.html'));
+       });
 
     
     const port = 3030;
